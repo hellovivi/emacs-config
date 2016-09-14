@@ -1,0 +1,47 @@
+#+TITLE: Starter Kit Python
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter kit Python
+
+Support for the Python programming language.
+
+** Check Dependencies
+
+Determine whether required packages are installed. If not, use ELPA to
+install them.
+#+begin_src emacs-lisp
+  (dolist (package '(go-mode))
+    (unless (package-installed-p package)
+      (package-install package)))
+#+end_src
+
+** Use Python's python-mode.el instead of Emacs' python.el
+   :PROPERTIES:
+   :CUSTOM_ID: python
+   :END:
+Replace the Python mode that comes with Emacs by the Python mode
+supplied by the Python distribution itself.
+#+begin_src emacs-lisp
+(require 'go-mode)
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(add-to-list 'auto-mode-alist '("\\.go$" . go-mode))
+#+end_src
+
+** Use Cython mode
+   :PROPERTIES:
+   :CUSTOM_ID: cython
+   :END:
+#+begin_src emacs-lisp
+   (eval-after-load "go-mode"
+      '(require 'flymake-go))
+   (add-hook 'go-mode-hook (lambda ()
+                            (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
+   (add-hook 'go-mode-hook (lambda ()
+                            (local-set-key (kbd "C-c i") 'go-goto-imports)))
+   (add-hook 'before-save-hook 'gofmt-before-save)
+#+end_src
+
+   

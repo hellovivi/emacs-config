@@ -1,0 +1,157 @@
+;; Object Controllers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Controllers/"
+  :tables (list 
+   (semanticdb-table "Controller.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App\\Http\\Controllers" type
+               (:members 
+                  ( ("Controller" type
+                       (:typemodifiers ("abstract")
+                        :superclasses "BaseController"
+                        :type "class")
+                        (reparse-symbol compilation_units) [255 370])
+                    ("AuthorizesRequests" alias
+                       (:definition "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [200 252])
+                    ("ValidatesRequests" alias
+                       (:definition "Illuminate\\Foundation\\Validation\\ValidatesRequests"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [144 194])
+                    ("BaseController" alias
+                       (:definition "Illuminate\\Routing\\Controller"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [91 138])
+                    ("DispatchesJobs" alias
+                       (:definition "Illuminate\\Foundation\\Bus\\DispatchesJobs"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [45 85]))                  
+                :type "namespace")
+                nil [8 370]))          
+    :file "Controller.php"
+    :pointmax 371
+    :fsize 370
+    :lastmodtime '(22074 52926 0 0)
+    :unmatched-syntax '((T_SEMI 367 . 368) (IDENTIFIER 350 . 367) (T_COMMA 348 . 349) (IDENTIFIER 334 . 348) (T_COMMA 332 . 333) (IDENTIFIER 314 . 332) (T_USE 310 . 313))
+    )
+   (semanticdb-table "PhotoController.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App\\Http\\Controllers" type
+               (:members 
+                  ( ("PhotoController" type
+                       (:superclasses "Controller"
+                        :members 
+                          ( ("index" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [294 573])
+                            ("create" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [693 740])
+                            ("store" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$request" variable (:type "Request") (reparse-symbol formal_parameters) [932 948]))                                  )
+                                (reparse-symbol class_member_declaration) [910 972])
+                            ("show" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$id" variable nil (reparse-symbol formal_parameters) [1126 1129]))                                  )
+                                (reparse-symbol class_member_declaration) [1105 1153])
+                            ("edit" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$id" variable nil (reparse-symbol formal_parameters) [1325 1328]))                                  )
+                                (reparse-symbol class_member_declaration) [1304 1352])
+                            ("update" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$request" variable (:type "Request") (reparse-symbol formal_parameters) [1568 1584])
+                                    ("$id" variable nil (reparse-symbol formal_parameters) [1586 1589]))                                  )
+                                (reparse-symbol class_member_declaration) [1545 1613])
+                            ("destroy" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$id" variable nil (reparse-symbol formal_parameters) [1782 1785]))                                  )
+                                (reparse-symbol class_member_declaration) [1758 1809]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [141 1811])
+                    ("DB" alias
+                       (:definition "DB"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [135 137])
+                    ("Controller" alias
+                       (:definition "App\\Http\\Controllers\\Controller"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [98 129])
+                    ("Requests" alias
+                       (:definition "App\\Http\\Requests"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [75 92])
+                    ("Request" alias
+                       (:definition "Illuminate\\Http\\Request"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [45 68]))                  
+                :type "namespace")
+                nil [8 1811]))          
+    :file "PhotoController.php"
+    :pointmax 1812
+    :fsize 1703
+    :lastmodtime '(22095 2572 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "UserController.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App\\Http\\Controllers" type
+               (:members 
+                  ( ("UserController" type
+                       (:superclasses "Controller"
+                        :members 
+                          ( ("index" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$request" variable (:type "Request") (reparse-symbol formal_parameters) [389 405])
+                                    ("$method" variable nil (reparse-symbol formal_parameters) [406 413]))                                  )
+                                (reparse-symbol class_member_declaration) [367 588])
+                            ("getContacts" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$request" variable (:type "Request") (reparse-symbol formal_parameters) [714 730]))                                  )
+                                (reparse-symbol class_member_declaration) [686 1201])
+                            ("getPublicAccountList" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [1237 1287])
+                            ("getUserInfo" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [1323 1359])
+                            ("getUserLoginStatus" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [1397 1440]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [215 1443])
+                    ("UserRecentContact" alias
+                       (:definition "App\\Http\\Models\\UserModel\\UserRecentContact"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [168 211])
+                    ("Controller" alias
+                       (:definition "App\\Http\\Controllers\\Controller"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [130 161])
+                    ("Requests" alias
+                       (:definition "App\\Http\\Requests"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [107 124])
+                    ("RedisDB" alias
+                       (:definition "RedisDB"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [94 101])
+                    ("Request" alias
+                       (:definition "Illuminate\\Http\\Request"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [64 87]))                  
+                :type "namespace")
+                nil [8 1443]))          
+    :file "UserController.php"
+    :pointmax 1444
+    :fsize 1515
+    :lastmodtime '(22102 38809 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!app!Http!Controllers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

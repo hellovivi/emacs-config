@@ -1,0 +1,65 @@
+;; Object Exceptions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Exceptions/"
+  :tables (list 
+   (semanticdb-table "Handler.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App\\Exceptions" type
+               (:members 
+                  ( ("Handler" type
+                       (:superclasses "ExceptionHandler"
+                        :members 
+                          ( ("$dontReport" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[
+        HttpException::class,
+        ModelNotFoundException::class,
+    ]")
+                                (reparse-symbol class_member_declaration) [450 551])
+                            ("report" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$e" variable (:type "Exception") (reparse-symbol formal_parameters) [767 779]))                                  )
+                                (reparse-symbol class_member_declaration) [744 827])
+                            ("render" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$request" variable nil (reparse-symbol formal_parameters) [1050 1058])
+                                    ("$e" variable (:type "Exception") (reparse-symbol formal_parameters) [1060 1072]))                                  )
+                                (reparse-symbol class_member_declaration) [1027 1259]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [298 1261])
+                    ("ExceptionHandler" alias
+                       (:definition "Illuminate\\Foundation\\Exceptions\\Handler"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [235 295])
+                    ("NotFoundHttpException" alias
+                       (:definition "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [169 229])
+                    ("HttpException" alias
+                       (:definition "Symfony\\Component\\HttpKernel\\Exception\\HttpException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [111 163])
+                    ("ModelNotFoundException" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\ModelNotFoundException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [54 105])
+                    ("Exception" alias
+                       (:definition "Exception"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [39 48]))                  
+                :type "namespace")
+                nil [8 1261]))          
+    :file "Handler.php"
+    :pointmax 1262
+    :fsize 1261
+    :lastmodtime '(22074 52926 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!app!Exceptions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

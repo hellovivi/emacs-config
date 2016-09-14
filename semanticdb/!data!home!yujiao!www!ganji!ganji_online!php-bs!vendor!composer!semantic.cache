@@ -1,0 +1,27 @@
+;; Object composer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "composer/"
+  :tables (list 
+   (semanticdb-table "autoload_real.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "autoload_real.php"
+    :pointmax 1586
+    :fsize 1585
+    :lastmodtime '(22089 51753 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "autoload_psr4.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "autoload_psr4.php"
+    :pointmax 2094
+    :fsize 2093
+    :lastmodtime '(22089 51753 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!vendor!composer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

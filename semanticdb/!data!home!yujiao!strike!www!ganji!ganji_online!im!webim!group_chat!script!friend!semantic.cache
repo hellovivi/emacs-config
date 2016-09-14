@@ -1,0 +1,18 @@
+;; Object friend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "friend/"
+  :tables (list 
+   (semanticdb-table "getActivePerson.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "getActivePerson.php"
+    :pointmax 828
+    :fsize 847
+    :lastmodtime '(22093 34887 0 0)
+    :unmatched-syntax '((T_SEMI 826 . 827) (PAREN_BLOCK 814 . 826) (IDENTIFIER 799 . 814) (T_SEMI 797 . 798) (PAREN_BLOCK 779 . 797) (IDENTIFIER 770 . 779) (T_NEW 766 . 769) (T_EQ 765 . 766) (T_VARIABLE 755 . 765) (T_SEMI 753 . 754) (PAREN_BLOCK 728 . 753) (IDENTIFIER 721 . 728) (BRACE_BLOCK 675 . 720) (PAREN_BLOCK 659 . 675) (T_IF 656 . 658) (T_SEMI 654 . 655) (BRACK_BLOCK 651 . 654) (BRACK_BLOCK 643 . 651) (T_VARIABLE 635 . 643) (T_EQ 634 . 635) (T_VARIABLE 625 . 634) (BRACE_BLOCK 574 . 623) (PAREN_BLOCK 551 . 573) (T_IF 548 . 550) (BRACE_BLOCK 239 . 546) (PAREN_BLOCK 226 . 238) (IDENTIFIER 211 . 226) (T_FUNCTION 202 . 210) (T_SEMI 200 . 201) (STRING_LITERAL 168 . 200) (T_DOT 166 . 167) (IDENTIFIER 144 . 166) (T_REQUIRE_ONCE 131 . 143) (T_SEMI 129 . 130) (STRING_LITERAL 95 . 129) (T_DOT 94 . 95) (IDENTIFIER 81 . 94) (T_REQUIRE_ONCE 68 . 80) (T_SEMI 66 . 67) (STRING_LITERAL 40 . 66) (T_DOT 38 . 39) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   )
+  :file "!data!home!yujiao!strike!www!ganji!ganji_online!im!webim!group_chat!script!friend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

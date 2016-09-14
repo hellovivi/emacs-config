@@ -1,0 +1,136 @@
+;; Object friend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "friend/"
+  :tables (list 
+   (semanticdb-table "NearbyPerson.class.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "NearbyPerson.class.php"
+    :pointmax 27734
+    :fsize 28053
+    :lastmodtime '(22104 11827 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 108 . 27733) (IDENTIFIER 76 . 108) (T_CLASS 70 . 75) (T_SEMI 68 . 69) (STRING_LITERAL 40 . 68) (T_DOT 38 . 39) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27) (BRACE_BLOCK 108 . 27733) (IDENTIFIER 76 . 108) (T_CLASS 70 . 75) (T_SEMI 68 . 69) (STRING_LITERAL 40 . 68) (T_DOT 38 . 39) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   (semanticdb-table "UserInfo.class.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "UserInfo.class.php"
+    :pointmax 22133
+    :fsize 22654
+    :lastmodtime '(22104 20616 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 164 . 22132) (IDENTIFIER 136 . 164) (T_CLASS 130 . 135) (T_SEMI 128 . 129) (STRING_LITERAL 100 . 128) (T_DOT 98 . 99) (PAREN_BLOCK 87 . 97) (IDENTIFIER 80 . 87) (T_REQUIRE_ONCE 67 . 79) (T_SEMI 65 . 66) (STRING_LITERAL 40 . 65) (T_DOT 38 . 39) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   (semanticdb-table "Report.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Service_Data_Friend_Report" type
+               (:members 
+                  ( ("$lastSql" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [45 62])
+                    ("__destruct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [67 185])
+                    ("commitReportInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [253 260])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [261 272])
+                            ("$reportType" variable nil (reparse-symbol formal_parameters) [273 284])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [285 299]))                          )
+                        (reparse-symbol class_member_declaration) [220 2874])
+                    ("reportImUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [2908 2915])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [2916 2927])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [2928 2942]))                          )
+                        (reparse-symbol class_member_declaration) [2879 3083])
+                    ("reportGroup" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [3116 3123])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [3124 3135])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [3136 3150]))                          )
+                        (reparse-symbol class_member_declaration) [3088 3291])
+                    ("verifyGroup" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [3324 3331])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [3332 3343])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [3344 3358]))                          )
+                        (reparse-symbol class_member_declaration) [3296 3499])
+                    ("verifyImUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [3533 3540])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [3541 3552])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [3553 3567]))                          )
+                        (reparse-symbol class_member_declaration) [3504 3709])
+                    ("verifyFeedInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [3745 3752])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [3753 3764])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [3765 3779]))                          )
+                        (reparse-symbol class_member_declaration) [3714 3921])
+                    ("reportFeedInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [3957 3964])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [3965 3976])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [3977 3991]))                          )
+                        (reparse-symbol class_member_declaration) [3926 4133])
+                    ("verifyFeedComment" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [4173 4180])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [4181 4192])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [4193 4207]))                          )
+                        (reparse-symbol class_member_declaration) [4139 4355])
+                    ("reportFeedComment" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [4394 4401])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [4402 4413])
+                            ("$reportContent" variable nil (reparse-symbol formal_parameters) [4414 4428]))                          )
+                        (reparse-symbol class_member_declaration) [4360 4576])
+                    ("updateReportInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$id" variable nil (reparse-symbol formal_parameters) [4643 4646])
+                            ("$handleResult" variable nil (reparse-symbol formal_parameters) [4647 4660])
+                            ("$isEffic" variable nil (reparse-symbol formal_parameters) [4661 4669]))                          )
+                        (reparse-symbol class_member_declaration) [4610 5664])
+                    ("insertOrUpdateReportInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$insertArr" variable nil (reparse-symbol formal_parameters) [5715 5725])
+                            ("$updateArr" variable (:default-value (5737 . 5741)) (reparse-symbol formal_parameters) [5726 5741]))                          )
+                        (reparse-symbol class_member_declaration) [5674 6217])
+                    ("getLastSql" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [6272 6339])
+                    ("getReportInfoById" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$id" variable nil (reparse-symbol formal_parameters) [6378 6381]))                          )
+                        (reparse-symbol class_member_declaration) [6344 6930])
+                    ("searchReportInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$reportType" variable nil (reparse-symbol formal_parameters) [6974 6985])
+                            ("$reportTimeStart" variable nil (reparse-symbol formal_parameters) [6986 7002])
+                            ("$reportTimeEnd" variable nil (reparse-symbol formal_parameters) [7004 7018])
+                            ("$isHandled" variable nil (reparse-symbol formal_parameters) [7019 7029])
+                            ("$isEffic" variable nil (reparse-symbol formal_parameters) [7030 7038])
+                            ("$page" variable nil (reparse-symbol formal_parameters) [7040 7045])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [7047 7053]))                          )
+                        (reparse-symbol class_member_declaration) [6941 8031]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 8033]))          
+    :file "Report.class.php"
+    :pointmax 8034
+    :fsize 8253
+    :lastmodtime '(22093 34887 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!strike!www!ganji!ganji_online!im!webim!group_chat!models!service!data!friend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

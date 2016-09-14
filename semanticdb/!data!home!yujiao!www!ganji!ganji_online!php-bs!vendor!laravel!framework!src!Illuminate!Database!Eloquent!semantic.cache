@@ -1,0 +1,1095 @@
+;; Object Eloquent/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Eloquent/"
+  :tables (list 
+   (semanticdb-table "Model.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Database\\Eloquent" type
+               (:members 
+                  ( ("Model" type
+                       (:typemodifiers ("abstract")
+                        :interfaces ("ArrayAccess" "Arrayable" "Jsonable" "JsonSerializable" "QueueableEntity" "UrlRoutable")
+                        :members 
+                          ( ("$connection" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1406 1428])
+                            ("$table" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1520 1537])
+                            ("$primaryKey" variable
+                               (:typemodifiers ("protected")
+                                :default-value "'id'")
+                                (reparse-symbol class_member_declaration) [1623 1652])
+                            ("$perPage" variable
+                               (:typemodifiers ("protected")
+                                :default-value "15")
+                                (reparse-symbol class_member_declaration) [1751 1775])
+                            ("$incrementing" variable
+                               (:typemodifiers ("public")
+                                :default-value "true")
+                                (reparse-symbol class_member_declaration) [1872 1900])
+                            ("$timestamps" variable
+                               (:typemodifiers ("public")
+                                :default-value "true")
+                                (reparse-symbol class_member_declaration) [1999 2025])
+                            ("$attributes" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2103 2130])
+                            ("$original" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2222 2247])
+                            ("$relations" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2341 2367])
+                            ("$hidden" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2470 2493])
+                            ("$visible" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2596 2620])
+                            ("$appends" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2725 2749])
+                            ("$fillable" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2844 2869])
+                            ("$guarded" variable
+                               (:typemodifiers ("protected")
+                                :default-value "['*']")
+                                (reparse-symbol class_member_declaration) [2967 2994])
+                            ("$dates" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [3096 3118])
+                            ("$dateFormat" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [3221 3243])
+                            ("$casts" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [3351 3373])
+                            ("$touches" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [3477 3501])
+                            ("$observables" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [3587 3615])
+                            ("$with" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [3713 3734])
+                            ("$morphClass" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [3841 3863])
+                            ("$exists" variable
+                               (:typemodifiers ("public")
+                                :default-value "false")
+                                (reparse-symbol class_member_declaration) [3947 3970])
+                            ("$wasRecentlyCreated" variable
+                               (:typemodifiers ("public")
+                                :default-value "false")
+                                (reparse-symbol class_member_declaration) [4097 4132])
+                            ("$snakeAttributes" variable (:default-value "true") (reparse-symbol class_member_declaration) [4255 4279])
+                            ("$resolver" variable nil (reparse-symbol class_member_declaration) [4427 4437])
+                            ("$dispatcher" variable nil (reparse-symbol class_member_declaration) [4573 4585])
+                            ("$booted" variable (:default-value "[]") (reparse-symbol class_member_declaration) [4684 4697])
+                            ("$globalScopes" variable (:default-value "[]") (reparse-symbol class_member_declaration) [4809 4828])
+                            ("$unguarded" variable (:default-value "false") (reparse-symbol class_member_declaration) [4943 4962])
+                            ("$mutatorCache" variable (:default-value "[]") (reparse-symbol class_member_declaration) [5085 5104])
+                            ("$manyMethods" variable (:default-value "['belongsToMany', 'morphToMany', 'morphedByMany']") (reparse-symbol class_member_declaration) [5211 5276])
+                            ("CREATED_AT" variable
+                               (:constant-flag t
+                                :typemodifiers ("static" "public")
+                                :default-value (5385 . 5386))
+                                (reparse-symbol class_member_declaration) [5368 5400])
+                            ("UPDATED_AT" variable
+                               (:constant-flag t
+                                :typemodifiers ("static" "public")
+                                :default-value (5509 . 5510))
+                                (reparse-symbol class_member_declaration) [5492 5524])
+                            ("__construct" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable
+                                       (:default-value (5700 . 5702)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [5680 5702]))                                  )
+                                (reparse-symbol class_member_declaration) [5652 5816])
+                            ("bootIfNotBooted" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [5928 6250])
+                            ("boot" function (:typemodifiers ("protected" "static")) (reparse-symbol class_member_declaration) [6341 6415])
+                            ("bootTraits" function (:typemodifiers ("protected" "static")) (reparse-symbol class_member_declaration) [6517 6824])
+                            ("clearBootedModels" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [6939 7023])
+                            ("addGlobalScope" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$scope" variable (:type "ScopeInterface") (reparse-symbol formal_parameters) [7227 7248]))                                  )
+                                (reparse-symbol class_member_declaration) [7189 7340])
+                            ("hasGlobalScope" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$scope" variable nil (reparse-symbol formal_parameters) [7543 7549]))                                  )
+                                (reparse-symbol class_member_declaration) [7505 7620])
+                            ("getGlobalScope" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$scope" variable nil (reparse-symbol formal_parameters) [7873 7879]))                                  )
+                                (reparse-symbol class_member_declaration) [7835 8057])
+                            ("getGlobalScopes" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [8202 8317])
+                            ("observe" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$class" variable nil (reparse-symbol formal_parameters) [8508 8514])
+                                    ("$priority" variable (:default-value (8528 . 8529)) (reparse-symbol formal_parameters) [8516 8529]))                                  )
+                                (reparse-symbol class_member_declaration) [8477 9120])
+                            ("fill" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [9352 9369]))                                  )
+                                (reparse-symbol class_member_declaration) [9331 10043])
+                            ("forceFill" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [10227 10244]))                                  )
+                                (reparse-symbol class_member_declaration) [10201 10645])
+                            ("fillableFromArray" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [10819 10836]))                                  )
+                                (reparse-symbol class_member_declaration) [10782 11036])
+                            ("newInstance" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:default-value (11242 . 11244)) (reparse-symbol formal_parameters) [11228 11244])
+                                    ("$exists" variable (:default-value (11256 . 11261)) (reparse-symbol formal_parameters) [11246 11261]))                                  )
+                                (reparse-symbol class_member_declaration) [11200 11627])
+                            ("newFromBuilder" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:default-value (11850 . 11852)) (reparse-symbol formal_parameters) [11836 11852])
+                                    ("$connection" variable (:default-value (11868 . 11872)) (reparse-symbol formal_parameters) [11854 11872]))                                  )
+                                (reparse-symbol class_member_declaration) [11805 12084])
+                            ("hydrate" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$items" variable (:type "array") (reparse-symbol formal_parameters) [12325 12337])
+                                    ("$connection" variable (:default-value (12353 . 12357)) (reparse-symbol formal_parameters) [12339 12357]))                                  )
+                                (reparse-symbol class_member_declaration) [12294 12618])
+                            ("hydrateRaw" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [12894 12900])
+                                    ("$bindings" variable (:default-value (12914 . 12916)) (reparse-symbol formal_parameters) [12902 12916])
+                                    ("$connection" variable (:default-value (12932 . 12936)) (reparse-symbol formal_parameters) [12918 12936]))                                  )
+                                (reparse-symbol class_member_declaration) [12860 13138])
+                            ("create" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$attributes" variable
+                                       (:default-value (13322 . 13324)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [13302 13324]))                                  )
+                                (reparse-symbol class_member_declaration) [13272 13428])
+                            ("forceCreate" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [13620 13637]))                                  )
+                                (reparse-symbol class_member_declaration) [13585 14045])
+                            ("firstOrCreate" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [14233 14250]))                                  )
+                                (reparse-symbol class_member_declaration) [14196 14422])
+                            ("firstOrNew" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [14612 14629]))                                  )
+                                (reparse-symbol class_member_declaration) [14578 14797])
+                            ("updateOrCreate" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [15033 15050])
+                                    ("$values" variable
+                                       (:default-value (15068 . 15070)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [15052 15070]))                                  )
+                                (reparse-symbol class_member_declaration) [14995 15206])
+                            ("query" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [15321 15404])
+                            ("on" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$connection" variable (:default-value (15621 . 15625)) (reparse-symbol formal_parameters) [15607 15625]))                                  )
+                                (reparse-symbol class_member_declaration) [15581 16001])
+                            ("onWriteConnection" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [16137 16277])
+                            ("all" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$columns" variable (:default-value (16494 . 16499)) (reparse-symbol formal_parameters) [16483 16499]))                                  )
+                                (reparse-symbol class_member_declaration) [16456 16667])
+                            ("findOrNew" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$id" variable nil (reparse-symbol formal_parameters) [16900 16903])
+                                    ("$columns" variable (:default-value (16916 . 16921)) (reparse-symbol formal_parameters) [16905 16921]))                                  )
+                                (reparse-symbol class_member_declaration) [16867 17062])
+                            ("fresh" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$with" variable
+                                       (:default-value (17237 . 17239)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [17223 17239]))                                  )
+                                (reparse-symbol class_member_declaration) [17201 17426])
+                            ("load" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$relations" variable nil (reparse-symbol formal_parameters) [17579 17589]))                                  )
+                                (reparse-symbol class_member_declaration) [17558 17815])
+                            ("with" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$relations" variable nil (reparse-symbol formal_parameters) [18022 18032]))                                  )
+                                (reparse-symbol class_member_declaration) [17994 18224])
+                            ("append" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable nil (reparse-symbol formal_parameters) [18395 18406]))                                  )
+                                (reparse-symbol class_member_declaration) [18372 18637])
+                            ("hasOne" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [18892 18900])
+                                    ("$foreignKey" variable (:default-value (18916 . 18920)) (reparse-symbol formal_parameters) [18902 18920])
+                                    ("$localKey" variable (:default-value (18934 . 18938)) (reparse-symbol formal_parameters) [18922 18938]))                                  )
+                                (reparse-symbol class_member_declaration) [18869 19210])
+                            ("morphOne" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [19531 19539])
+                                    ("$name" variable nil (reparse-symbol formal_parameters) [19541 19546])
+                                    ("$type" variable (:default-value (19556 . 19560)) (reparse-symbol formal_parameters) [19548 19560])
+                                    ("$id" variable (:default-value (19568 . 19572)) (reparse-symbol formal_parameters) [19562 19572])
+                                    ("$localKey" variable (:default-value (19586 . 19590)) (reparse-symbol formal_parameters) [19574 19590]))                                  )
+                                (reparse-symbol class_member_declaration) [19506 19903])
+                            ("belongsTo" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [20214 20222])
+                                    ("$foreignKey" variable (:default-value (20238 . 20242)) (reparse-symbol formal_parameters) [20224 20242])
+                                    ("$otherKey" variable (:default-value (20256 . 20260)) (reparse-symbol formal_parameters) [20244 20260])
+                                    ("$relation" variable (:default-value (20274 . 20278)) (reparse-symbol formal_parameters) [20262 20278]))                                  )
+                                (reparse-symbol class_member_declaration) [20188 21512])
+                            ("morphTo" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable (:default-value (21791 . 21795)) (reparse-symbol formal_parameters) [21783 21795])
+                                    ("$type" variable (:default-value (21805 . 21809)) (reparse-symbol formal_parameters) [21797 21809])
+                                    ("$id" variable (:default-value (21817 . 21821)) (reparse-symbol formal_parameters) [21811 21821]))                                  )
+                                (reparse-symbol class_member_declaration) [21759 23248])
+                            ("getActualClassNameForMorph" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$class" variable nil (reparse-symbol formal_parameters) [23432 23438]))                                  )
+                                (reparse-symbol class_member_declaration) [23389 23514])
+                            ("hasMany" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [23772 23780])
+                                    ("$foreignKey" variable (:default-value (23796 . 23800)) (reparse-symbol formal_parameters) [23782 23800])
+                                    ("$localKey" variable (:default-value (23814 . 23818)) (reparse-symbol formal_parameters) [23802 23818]))                                  )
+                                (reparse-symbol class_member_declaration) [23748 24091])
+                            ("hasManyThrough" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [24447 24455])
+                                    ("$through" variable nil (reparse-symbol formal_parameters) [24457 24465])
+                                    ("$firstKey" variable (:default-value (24479 . 24483)) (reparse-symbol formal_parameters) [24467 24483])
+                                    ("$secondKey" variable (:default-value (24498 . 24502)) (reparse-symbol formal_parameters) [24485 24502])
+                                    ("$localKey" variable (:default-value (24516 . 24520)) (reparse-symbol formal_parameters) [24504 24520]))                                  )
+                                (reparse-symbol class_member_declaration) [24416 24857])
+                            ("morphMany" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [25181 25189])
+                                    ("$name" variable nil (reparse-symbol formal_parameters) [25191 25196])
+                                    ("$type" variable (:default-value (25206 . 25210)) (reparse-symbol formal_parameters) [25198 25210])
+                                    ("$id" variable (:default-value (25218 . 25222)) (reparse-symbol formal_parameters) [25212 25222])
+                                    ("$localKey" variable (:default-value (25236 . 25240)) (reparse-symbol formal_parameters) [25224 25240]))                                  )
+                                (reparse-symbol class_member_declaration) [25155 25810])
+                            ("belongsToMany" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [26144 26152])
+                                    ("$table" variable (:default-value (26163 . 26167)) (reparse-symbol formal_parameters) [26154 26167])
+                                    ("$foreignKey" variable (:default-value (26183 . 26187)) (reparse-symbol formal_parameters) [26169 26187])
+                                    ("$otherKey" variable (:default-value (26201 . 26205)) (reparse-symbol formal_parameters) [26189 26205])
+                                    ("$relation" variable (:default-value (26219 . 26223)) (reparse-symbol formal_parameters) [26207 26223]))                                  )
+                                (reparse-symbol class_member_declaration) [26114 27677])
+                            ("morphToMany" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [28047 28055])
+                                    ("$name" variable nil (reparse-symbol formal_parameters) [28057 28062])
+                                    ("$table" variable (:default-value (28073 . 28077)) (reparse-symbol formal_parameters) [28064 28077])
+                                    ("$foreignKey" variable (:default-value (28093 . 28097)) (reparse-symbol formal_parameters) [28079 28097])
+                                    ("$otherKey" variable (:default-value (28111 . 28115)) (reparse-symbol formal_parameters) [28099 28115])
+                                    ("$inverse" variable (:default-value (28128 . 28133)) (reparse-symbol formal_parameters) [28117 28133]))                                  )
+                                (reparse-symbol class_member_declaration) [28019 29062])
+                            ("morphedByMany" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [29411 29419])
+                                    ("$name" variable nil (reparse-symbol formal_parameters) [29421 29426])
+                                    ("$table" variable (:default-value (29437 . 29441)) (reparse-symbol formal_parameters) [29428 29441])
+                                    ("$foreignKey" variable (:default-value (29457 . 29461)) (reparse-symbol formal_parameters) [29443 29461])
+                                    ("$otherKey" variable (:default-value (29475 . 29479)) (reparse-symbol formal_parameters) [29463 29479]))                                  )
+                                (reparse-symbol class_member_declaration) [29381 29938])
+                            ("getBelongsToManyCaller" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [30046 30424])
+                            ("joiningTable" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$related" variable nil (reparse-symbol formal_parameters) [30599 30607]))                                  )
+                                (reparse-symbol class_member_declaration) [30570 31321])
+                            ("destroy" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$ids" variable nil (reparse-symbol formal_parameters) [31476 31480]))                                  )
+                                (reparse-symbol class_member_declaration) [31445 32331])
+                            ("delete" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [32454 33485])
+                            ("forceDelete" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [33685 33758])
+                            ("performDeleteOnModel" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [33870 34001])
+                            ("saving" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [34210 34219])
+                                    ("$priority" variable (:default-value (34233 . 34234)) (reparse-symbol formal_parameters) [34221 34234]))                                  )
+                                (reparse-symbol class_member_declaration) [34180 34315])
+                            ("saved" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [34522 34531])
+                                    ("$priority" variable (:default-value (34545 . 34546)) (reparse-symbol formal_parameters) [34533 34546]))                                  )
+                                (reparse-symbol class_member_declaration) [34493 34626])
+                            ("updating" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [34840 34849])
+                                    ("$priority" variable (:default-value (34863 . 34864)) (reparse-symbol formal_parameters) [34851 34864]))                                  )
+                                (reparse-symbol class_member_declaration) [34808 34947])
+                            ("updated" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [35159 35168])
+                                    ("$priority" variable (:default-value (35182 . 35183)) (reparse-symbol formal_parameters) [35170 35183]))                                  )
+                                (reparse-symbol class_member_declaration) [35128 35265])
+                            ("creating" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [35478 35487])
+                                    ("$priority" variable (:default-value (35501 . 35502)) (reparse-symbol formal_parameters) [35489 35502]))                                  )
+                                (reparse-symbol class_member_declaration) [35446 35585])
+                            ("created" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [35796 35805])
+                                    ("$priority" variable (:default-value (35819 . 35820)) (reparse-symbol formal_parameters) [35807 35820]))                                  )
+                                (reparse-symbol class_member_declaration) [35765 35902])
+                            ("deleting" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [36115 36124])
+                                    ("$priority" variable (:default-value (36138 . 36139)) (reparse-symbol formal_parameters) [36126 36139]))                                  )
+                                (reparse-symbol class_member_declaration) [36083 36222])
+                            ("deleted" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable nil (reparse-symbol formal_parameters) [36433 36442])
+                                    ("$priority" variable (:default-value (36456 . 36457)) (reparse-symbol formal_parameters) [36444 36457]))                                  )
+                                (reparse-symbol class_member_declaration) [36402 36539])
+                            ("flushEventListeners" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [36644 36964])
+                            ("registerModelEvent" function
+                               (:typemodifiers ("protected" "static")
+                                :arguments 
+                                  ( ("$event" variable nil (reparse-symbol formal_parameters) [37211 37217])
+                                    ("$callback" variable nil (reparse-symbol formal_parameters) [37219 37228])
+                                    ("$priority" variable (:default-value (37242 . 37243)) (reparse-symbol formal_parameters) [37230 37243]))                                  )
+                                (reparse-symbol class_member_declaration) [37166 37442])
+                            ("getObservableEvents" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [37531 37840])
+                            ("setObservableEvents" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$observables" variable (:type "array") (reparse-symbol formal_parameters) [38000 38018]))                                  )
+                                (reparse-symbol class_member_declaration) [37964 38097])
+                            ("addObservableEvents" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$observables" variable nil (reparse-symbol formal_parameters) [38260 38272]))                                  )
+                                (reparse-symbol class_member_declaration) [38224 38456])
+                            ("removeObservableEvents" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$observables" variable nil (reparse-symbol formal_parameters) [38625 38637]))                                  )
+                                (reparse-symbol class_member_declaration) [38586 38806])
+                            ("increment" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$column" variable nil (reparse-symbol formal_parameters) [38998 39005])
+                                    ("$amount" variable (:default-value (39017 . 39018)) (reparse-symbol formal_parameters) [39007 39018]))                                  )
+                                (reparse-symbol class_member_declaration) [38969 39106])
+                            ("decrement" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$column" variable nil (reparse-symbol formal_parameters) [39298 39305])
+                                    ("$amount" variable (:default-value (39317 . 39318)) (reparse-symbol formal_parameters) [39307 39318]))                                  )
+                                (reparse-symbol class_member_declaration) [39269 39406])
+                            ("incrementOrDecrement" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$column" variable nil (reparse-symbol formal_parameters) [39646 39653])
+                                    ("$amount" variable nil (reparse-symbol formal_parameters) [39655 39662])
+                                    ("$method" variable nil (reparse-symbol formal_parameters) [39664 39671]))                                  )
+                                (reparse-symbol class_member_declaration) [39606 39995])
+                            ("incrementOrDecrementAttributeValue" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$column" variable nil (reparse-symbol formal_parameters) [40263 40270])
+                                    ("$amount" variable nil (reparse-symbol formal_parameters) [40272 40279])
+                                    ("$method" variable nil (reparse-symbol formal_parameters) [40281 40288]))                                  )
+                                (reparse-symbol class_member_declaration) [40209 40446])
+                            ("update" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable
+                                       (:default-value (40617 . 40619)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [40597 40619]))                                  )
+                                (reparse-symbol class_member_declaration) [40574 40782])
+                            ("push" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [40883 41593])
+                            ("save" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$options" variable
+                                       (:default-value (41750 . 41752)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [41733 41752]))                                  )
+                                (reparse-symbol class_member_declaration) [41712 42932])
+                            ("finishSave" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$options" variable (:type "array") (reparse-symbol formal_parameters) [43099 43113]))                                  )
+                                (reparse-symbol class_member_declaration) [43069 43299])
+                            ("performUpdate" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$query" variable (:type "Builder") (reparse-symbol formal_parameters) [43514 43528])
+                                    ("$options" variable
+                                       (:default-value (43547 . 43549)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [43530 43549]))                                  )
+                                (reparse-symbol class_member_declaration) [43481 44926])
+                            ("performInsert" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$query" variable (:type "Builder") (reparse-symbol formal_parameters) [45141 45155])
+                                    ("$options" variable
+                                       (:default-value (45174 . 45176)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [45157 45176]))                                  )
+                                (reparse-symbol class_member_declaration) [45108 46790])
+                            ("insertAndSetId" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$query" variable (:type "Builder") (reparse-symbol formal_parameters) [47032 47046])
+                                    ("$attributes" variable nil (reparse-symbol formal_parameters) [47048 47059]))                                  )
+                                (reparse-symbol class_member_declaration) [46998 47197])
+                            ("touchOwners" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [47294 47748])
+                            ("touches" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$relation" variable nil (reparse-symbol formal_parameters) [47910 47919]))                                  )
+                                (reparse-symbol class_member_declaration) [47886 47984])
+                            ("fireModelEvent" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$event" variable nil (reparse-symbol formal_parameters) [48170 48176])
+                                    ("$halt" variable (:default-value (48186 . 48190)) (reparse-symbol formal_parameters) [48178 48190]))                                  )
+                                (reparse-symbol class_member_declaration) [48136 48693])
+                            ("setKeysForSaveQuery" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$query" variable (:type "Builder") (reparse-symbol formal_parameters) [48920 48934]))                                  )
+                                (reparse-symbol class_member_declaration) [48881 49049])
+                            ("getKeyForSaveQuery" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [49150 49385])
+                            ("touch" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [49478 49651])
+                            ("updateTimestamps" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [49750 50065])
+                            ("setCreatedAt" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [50225 50231]))                                  )
+                                (reparse-symbol class_member_declaration) [50196 50313])
+                            ("setUpdatedAt" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [50473 50479]))                                  )
+                                (reparse-symbol class_member_declaration) [50444 50561])
+                            ("getCreatedAtColumn" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [50660 50743])
+                            ("getUpdatedAtColumn" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [50842 50925])
+                            ("freshTimestamp" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [51028 51099])
+                            ("freshTimestampString" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [51194 51305])
+                            ("newQuery" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [51441 51582])
+                            ("newQueryWithoutScope" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$scope" variable nil (reparse-symbol formal_parameters) [51824 51830]))                                  )
+                                (reparse-symbol class_member_declaration) [51787 51953])
+                            ("newQueryWithoutScopes" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [52110 52562])
+                            ("applyGlobalScopes" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$builder" variable nil (reparse-symbol formal_parameters) [52803 52811]))                                  )
+                                (reparse-symbol class_member_declaration) [52769 52959])
+                            ("removeGlobalScopes" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$builder" variable nil (reparse-symbol formal_parameters) [53204 53212]))                                  )
+                                (reparse-symbol class_member_declaration) [53169 53361])
+                            ("newEloquentBuilder" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [53600 53606]))                                  )
+                                (reparse-symbol class_member_declaration) [53565 53655])
+                            ("newBaseQueryBuilder" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [53794 54010])
+                            ("newCollection" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$models" variable
+                                       (:default-value (54221 . 54223)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [54205 54223]))                                  )
+                                (reparse-symbol class_member_declaration) [54175 54276])
+                            ("newPivot" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$parent" variable (:type "Model") (reparse-symbol formal_parameters) [54589 54602])
+                                    ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [54604 54621])
+                                    ("$table" variable nil (reparse-symbol formal_parameters) [54623 54629])
+                                    ("$exists" variable nil (reparse-symbol formal_parameters) [54631 54638]))                                  )
+                                (reparse-symbol class_member_declaration) [54564 54716])
+                            ("getTable" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [54815 55018])
+                            ("setTable" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$table" variable nil (reparse-symbol formal_parameters) [55171 55177]))                                  )
+                                (reparse-symbol class_member_declaration) [55146 55244])
+                            ("getKey" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [55343 55436])
+                            ("getQueueableId" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [55536 55612])
+                            ("getKeyName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [55705 55779])
+                            ("setKeyName" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [55926 55930]))                                  )
+                                (reparse-symbol class_member_declaration) [55899 56000])
+                            ("getQualifiedKeyName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [56092 56199])
+                            ("getRouteKey" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [56296 56399])
+                            ("getRouteKeyName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [56490 56571])
+                            ("usesTimestamps" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [56667 56745])
+                            ("getMorphs" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [56958 56963])
+                                    ("$type" variable nil (reparse-symbol formal_parameters) [56965 56970])
+                                    ("$id" variable nil (reparse-symbol formal_parameters) [56972 56975]))                                  )
+                                (reparse-symbol class_member_declaration) [56929 57093])
+                            ("getMorphClass" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [57197 57497])
+                            ("getPerPage" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [57597 57668])
+                            ("setPerPage" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$perPage" variable nil (reparse-symbol formal_parameters) [57827 57835]))                                  )
+                                (reparse-symbol class_member_declaration) [57800 57906])
+                            ("getForeignKey" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [58012 58111])
+                            ("getHidden" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [58209 58278])
+                            ("setHidden" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$hidden" variable (:type "array") (reparse-symbol formal_parameters) [58432 58445]))                                  )
+                                (reparse-symbol class_member_declaration) [58406 58514])
+                            ("addHidden" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:default-value (58693 . 58697)) (reparse-symbol formal_parameters) [58679 58697]))                                  )
+                                (reparse-symbol class_member_declaration) [58653 58853])
+                            ("withHidden" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable nil (reparse-symbol formal_parameters) [59032 59043]))                                  )
+                                (reparse-symbol class_member_declaration) [59005 59151])
+                            ("getVisible" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [59250 59321])
+                            ("setVisible" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$visible" variable (:type "array") (reparse-symbol formal_parameters) [59478 59492]))                                  )
+                                (reparse-symbol class_member_declaration) [59451 59563])
+                            ("addVisible" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:default-value (59744 . 59748)) (reparse-symbol formal_parameters) [59730 59748]))                                  )
+                                (reparse-symbol class_member_declaration) [59703 59906])
+                            ("setAppends" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$appends" variable (:type "array") (reparse-symbol formal_parameters) [60066 60080]))                                  )
+                                (reparse-symbol class_member_declaration) [60039 60151])
+                            ("getFillable" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [60251 60324])
+                            ("fillable" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$fillable" variable (:type "array") (reparse-symbol formal_parameters) [60481 60496]))                                  )
+                                (reparse-symbol class_member_declaration) [60456 60569])
+                            ("getGuarded" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [60668 60739])
+                            ("guard" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$guarded" variable (:type "array") (reparse-symbol formal_parameters) [60891 60905]))                                  )
+                                (reparse-symbol class_member_declaration) [60869 60976])
+                            ("unguard" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$state" variable (:default-value (61142 . 61146)) (reparse-symbol formal_parameters) [61133 61146]))                                  )
+                                (reparse-symbol class_member_declaration) [61102 61196])
+                            ("reguard" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [61293 61373])
+                            ("isUnguarded" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [61472 61555])
+                            ("unguarded" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$callback" variable (:type "callable") (reparse-symbol formal_parameters) [61726 61744]))                                  )
+                                (reparse-symbol class_member_declaration) [61693 61946])
+                            ("isFillable" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [62112 62116]))                                  )
+                                (reparse-symbol class_member_declaration) [62085 62672])
+                            ("isGuarded" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [62821 62825]))                                  )
+                                (reparse-symbol class_member_declaration) [62795 62912])
+                            ("totallyGuarded" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [63011 63126])
+                            ("removeTableFromKey" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [63290 63294]))                                  )
+                                (reparse-symbol class_member_declaration) [63252 63426])
+                            ("getTouchedRelations" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [63531 63611])
+                            ("setTouchedRelations" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$touches" variable (:type "array") (reparse-symbol formal_parameters) [63783 63797]))                                  )
+                                (reparse-symbol class_member_declaration) [63747 63868])
+                            ("getIncrementing" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [63983 64064])
+                            ("setIncrementing" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [64215 64221]))                                  )
+                                (reparse-symbol class_member_declaration) [64183 64295])
+                            ("toJson" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$options" variable (:default-value (64452 . 64453)) (reparse-symbol formal_parameters) [64441 64453]))                                  )
+                                (reparse-symbol class_member_declaration) [64418 64528])
+                            ("jsonSerialize" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [64638 64714])
+                            ("toArray" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [64811 64967])
+                            ("attributesToArray" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [65068 67268])
+                            ("getArrayableAttributes" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [67377 67492])
+                            ("getArrayableAppends" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [67602 67837])
+                            ("relationsToArray" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [67939 69553])
+                            ("getArrayableRelations" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [69661 69774])
+                            ("getArrayableItems" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$values" variable (:type "array") (reparse-symbol formal_parameters) [69946 69959]))                                  )
+                                (reparse-symbol class_member_declaration) [69909 70183])
+                            ("getAttribute" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [70330 70334]))                                  )
+                                (reparse-symbol class_member_declaration) [70301 70542])
+                            ("getAttributeValue" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [70705 70709]))                                  )
+                                (reparse-symbol class_member_declaration) [70671 71888])
+                            ("getRelationValue" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [72026 72030]))                                  )
+                                (reparse-symbol class_member_declaration) [71993 72733])
+                            ("getAttributeFromArray" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [72904 72908]))                                  )
+                                (reparse-symbol class_member_declaration) [72863 73032])
+                            ("getRelationshipFromMethod" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$method" variable nil (reparse-symbol formal_parameters) [73243 73250]))                                  )
+                                (reparse-symbol class_member_declaration) [73198 73590])
+                            ("hasGetMutator" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [73756 73760]))                                  )
+                                (reparse-symbol class_member_declaration) [73726 73847])
+                            ("mutateAttribute" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [74046 74050])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [74052 74058]))                                  )
+                                (reparse-symbol class_member_declaration) [74011 74140])
+                            ("mutateAttributeForArray" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [74368 74372])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [74374 74380]))                                  )
+                                (reparse-symbol class_member_declaration) [74325 74522])
+                            ("hasCast" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [74699 74703]))                                  )
+                                (reparse-symbol class_member_declaration) [74672 74769])
+                            ("isDateCastable" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [74967 74971]))                                  )
+                                (reparse-symbol class_member_declaration) [74933 75102])
+                            ("isJsonCastable" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [75289 75293]))                                  )
+                                (reparse-symbol class_member_declaration) [75255 75445])
+                            ("getCastType" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [75606 75610]))                                  )
+                                (reparse-symbol class_member_declaration) [75575 75676])
+                            ("castAttribute" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [75864 75868])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [75870 75876]))                                  )
+                                (reparse-symbol class_member_declaration) [75831 76811])
+                            ("setAttribute" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [76991 76995])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [76997 77003]))                                  )
+                                (reparse-symbol class_member_declaration) [76962 77997])
+                            ("hasSetMutator" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [78163 78167]))                                  )
+                                (reparse-symbol class_member_declaration) [78133 78254])
+                            ("getDates" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [78365 78554])
+                            ("fromDateTime" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [78719 78725]))                                  )
+                                (reparse-symbol class_member_declaration) [78690 78866])
+                            ("asDateTime" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [79030 79036]))                                  )
+                                (reparse-symbol class_member_declaration) [79000 80801])
+                            ("serializeDate" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$date" variable (:type "DateTime") (reparse-symbol formal_parameters) [80971 80985]))                                  )
+                                (reparse-symbol class_member_declaration) [80938 81052])
+                            ("getDateFormat" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [81152 81294])
+                            ("setDateFormat" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$format" variable nil (reparse-symbol formal_parameters) [81451 81458]))                                  )
+                                (reparse-symbol class_member_declaration) [81421 81531])
+                            ("asJson" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [81676 81682]))                                  )
+                                (reparse-symbol class_member_declaration) [81650 81731])
+                            ("fromJson" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [81926 81932])
+                                    ("$asObject" variable (:default-value (81946 . 81951)) (reparse-symbol formal_parameters) [81934 81951]))                                  )
+                                (reparse-symbol class_member_declaration) [81901 82013])
+                            ("replicate" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$except" variable
+                                       (:default-value (82223 . 82227)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [82207 82227]))                                  )
+                                (reparse-symbol class_member_declaration) [82181 82591])
+                            ("getAttributes" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [82696 82773])
+                            ("setRawAttributes" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:type "array") (reparse-symbol formal_parameters) [82981 82998])
+                                    ("$sync" variable (:default-value (83008 . 83013)) (reparse-symbol formal_parameters) [83000 83013]))                                  )
+                                (reparse-symbol class_member_declaration) [82948 83157])
+                            ("getOriginal" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable (:default-value (83352 . 83356)) (reparse-symbol formal_parameters) [83345 83356])
+                                    ("$default" variable (:default-value (83369 . 83373)) (reparse-symbol formal_parameters) [83358 83373]))                                  )
+                                (reparse-symbol class_member_declaration) [83317 83444])
+                            ("syncOriginal" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [83548 83658])
+                            ("syncOriginalAttribute" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attribute" variable nil (reparse-symbol formal_parameters) [83844 83854]))                                  )
+                                (reparse-symbol class_member_declaration) [83806 83959])
+                            ("isDirty" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$attributes" variable (:default-value (84164 . 84168)) (reparse-symbol formal_parameters) [84150 84168]))                                  )
+                                (reparse-symbol class_member_declaration) [84126 84574])
+                            ("getDirty" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [84690 85134])
+                            ("originalIsNumericallyEquivalent" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [85349 85353]))                                  )
+                                (reparse-symbol class_member_declaration) [85298 85572])
+                            ("getRelations" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [85676 85751])
+                            ("getRelation" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$relation" variable nil (reparse-symbol formal_parameters) [85899 85908]))                                  )
+                                (reparse-symbol class_member_declaration) [85871 85965])
+                            ("relationLoaded" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [86123 86127]))                                  )
+                                (reparse-symbol class_member_declaration) [86092 86197])
+                            ("setRelation" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$relation" variable nil (reparse-symbol formal_parameters) [86389 86398])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [86400 86406]))                                  )
+                                (reparse-symbol class_member_declaration) [86361 86488])
+                            ("setRelations" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$relations" variable (:type "array") (reparse-symbol formal_parameters) [86652 86668]))                                  )
+                                (reparse-symbol class_member_declaration) [86623 86743])
+                            ("getConnection" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [86869 86973])
+                            ("getConnectionName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [87078 87159])
+                            ("setConnection" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [87321 87326]))                                  )
+                                (reparse-symbol class_member_declaration) [87291 87397])
+                            ("resolveConnection" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$connection" variable (:default-value (87601 . 87605)) (reparse-symbol formal_parameters) [87587 87605]))                                  )
+                                (reparse-symbol class_member_declaration) [87546 87677])
+                            ("getConnectionResolver" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [87815 87907])
+                            ("setConnectionResolver" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$resolver" variable (:type "Resolver") (reparse-symbol formal_parameters) [88121 88139]))                                  )
+                                (reparse-symbol class_member_declaration) [88076 88191])
+                            ("unsetConnectionResolver" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [88289 88383])
+                            ("getEventDispatcher" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [88509 88600])
+                            ("setEventDispatcher" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$dispatcher" variable (:type "Dispatcher") (reparse-symbol formal_parameters) [88801 88823]))                                  )
+                                (reparse-symbol class_member_declaration) [88759 88879])
+                            ("unsetEventDispatcher" function (:typemodifiers ("public" "static")) (reparse-symbol class_member_declaration) [88974 89067])
+                            ("getMutatedAttributes" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [89173 89422])
+                            ("cacheMutatedAttributes" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$class" variable nil (reparse-symbol formal_parameters) [89609 89615]))                                  )
+                                (reparse-symbol class_member_declaration) [89563 90377])
+                            ("__get" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [90530 90534]))                                  )
+                                (reparse-symbol class_member_declaration) [90508 90589])
+                            ("__set" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [90766 90770])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [90772 90778]))                                  )
+                                (reparse-symbol class_member_declaration) [90744 90834])
+                            ("offsetExists" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$offset" variable nil (reparse-symbol formal_parameters) [90990 90997]))                                  )
+                                (reparse-symbol class_member_declaration) [90961 91048])
+                            ("offsetGet" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$offset" variable nil (reparse-symbol formal_parameters) [91195 91202]))                                  )
+                                (reparse-symbol class_member_declaration) [91169 91246])
+                            ("offsetSet" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$offset" variable nil (reparse-symbol formal_parameters) [91421 91428])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [91430 91436]))                                  )
+                                (reparse-symbol class_member_declaration) [91395 91482])
+                            ("offsetUnset" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$offset" variable nil (reparse-symbol formal_parameters) [91632 91639]))                                  )
+                                (reparse-symbol class_member_declaration) [91604 91683])
+                            ("__isset" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [91838 91842]))                                  )
+                                (reparse-symbol class_member_declaration) [91814 92030])
+                            ("__unset" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$key" variable nil (reparse-symbol formal_parameters) [92171 92175]))                                  )
+                                (reparse-symbol class_member_declaration) [92147 92252])
+                            ("__call" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$method" variable nil (reparse-symbol formal_parameters) [92442 92449])
+                                    ("$parameters" variable nil (reparse-symbol formal_parameters) [92451 92462]))                                  )
+                                (reparse-symbol class_member_declaration) [92419 92725])
+                            ("__callStatic" function
+                               (:typemodifiers ("public" "static")
+                                :arguments 
+                                  ( ("$method" variable nil (reparse-symbol formal_parameters) [92936 92943])
+                                    ("$parameters" variable nil (reparse-symbol formal_parameters) [92945 92956]))                                  )
+                                (reparse-symbol class_member_declaration) [92900 93074])
+                            ("__toString" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [93180 93252])
+                            ("__wakeup" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [93376 93448]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [1203 93450])
+                    ("Resolver" alias
+                       (:definition "Illuminate\\Database\\ConnectionResolverInterface"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [1141 1200])
+                    ("HasManyThrough" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\HasManyThrough"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [1082 1135])
+                    ("BelongsToMany" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [1024 1076])
+                    ("MorphToMany" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\MorphToMany"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [968 1018])
+                    ("QueryBuilder" alias
+                       (:definition "Illuminate\\Database\\Query\\Builder"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [913 962])
+                    ("BelongsTo" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\BelongsTo"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [859 907])
+                    ("MorphMany" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\MorphMany"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [805 853])
+                    ("BaseCollection" alias
+                       (:definition "Illuminate\\Support\\Collection"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [752 799])
+                    ("MorphOne" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\MorphOne"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [699 746])
+                    ("Relation" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\Relation"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [646 693])
+                    ("MorphTo" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\MorphTo"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [594 640])
+                    ("HasMany" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\HasMany"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [542 588])
+                    ("HasOne" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\HasOne"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [491 536])
+                    ("Pivot" alias
+                       (:definition "Illuminate\\Database\\Eloquent\\Relations\\Pivot"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [441 485])
+                    ("QueueableEntity" alias
+                       (:definition "Illuminate\\Contracts\\Queue\\QueueableEntity"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [393 435])
+                    ("UrlRoutable" alias
+                       (:definition "Illuminate\\Contracts\\Routing\\UrlRoutable"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [347 387])
+                    ("Arrayable" alias
+                       (:definition "Illuminate\\Contracts\\Support\\Arrayable"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [303 341])
+                    ("Dispatcher" alias
+                       (:definition "Illuminate\\Contracts\\Events\\Dispatcher"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [259 297])
+                    ("Jsonable" alias
+                       (:definition "Illuminate\\Contracts\\Support\\Jsonable"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [216 253])
+                    ("Str" alias
+                       (:definition "Illuminate\\Support\\Str"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [188 210])
+                    ("Arr" alias
+                       (:definition "Illuminate\\Support\\Arr"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [160 182])
+                    ("JsonSerializable" alias
+                       (:definition "JsonSerializable"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [138 154])
+                    ("LogicException" alias
+                       (:definition "LogicException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [118 132])
+                    ("Carbon" alias
+                       (:definition "Carbon\\Carbon"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [99 112])
+                    ("ArrayAccess" alias
+                       (:definition "ArrayAccess"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [82 93])
+                    ("Exception" alias
+                       (:definition "Exception"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [67 76])
+                    ("DateTime" alias
+                       (:definition "DateTime"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [53 61]))                  
+                :type "namespace")
+                nil [8 93450]))          
+    :file "Model.php"
+    :pointmax 93451
+    :fsize 93450
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!vendor!laravel!framework!src!Illuminate!Database!Eloquent!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

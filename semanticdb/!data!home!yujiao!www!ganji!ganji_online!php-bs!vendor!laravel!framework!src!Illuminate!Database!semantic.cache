@@ -1,0 +1,527 @@
+;; Object Database/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Database/"
+  :tables (list 
+   (semanticdb-table "DatabaseManager.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Database" type
+               (:members 
+                  ( ("DatabaseManager" type
+                       (:interfaces ("ConnectionResolverInterface")
+                        :members 
+                          ( ("$app" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [351 366])
+                            ("$factory" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [506 525])
+                            ("$connections" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [612 640])
+                            ("$extensions" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [727 754])
+                            ("__construct" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$app" variable nil (reparse-symbol formal_parameters) [1009 1013])
+                                    ("$factory" variable (:type "ConnectionFactory") (reparse-symbol formal_parameters) [1015 1041]))                                  )
+                                (reparse-symbol class_member_declaration) [981 1116])
+                            ("connection" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable (:default-value (1299 . 1303)) (reparse-symbol formal_parameters) [1291 1303]))                                  )
+                                (reparse-symbol class_member_declaration) [1264 1915])
+                            ("parseConnectionName" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [2110 2115]))                                  )
+                                (reparse-symbol class_member_declaration) [2071 2315])
+                            ("purge" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable (:default-value (2494 . 2498)) (reparse-symbol formal_parameters) [2486 2498]))                                  )
+                                (reparse-symbol class_member_declaration) [2464 2588])
+                            ("disconnect" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable (:default-value (2744 . 2748)) (reparse-symbol formal_parameters) [2736 2748]))                                  )
+                                (reparse-symbol class_member_declaration) [2709 2913])
+                            ("reconnect" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable (:default-value (3092 . 3096)) (reparse-symbol formal_parameters) [3084 3096]))                                  )
+                                (reparse-symbol class_member_declaration) [3058 3343])
+                            ("refreshPdoConnections" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [3547 3552]))                                  )
+                                (reparse-symbol class_member_declaration) [3506 3781])
+                            ("makeConnection" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [3966 3971]))                                  )
+                                (reparse-symbol class_member_declaration) [3932 4893])
+                            ("prepare" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$connection" variable (:type "Connection") (reparse-symbol formal_parameters) [5105 5127]))                                  )
+                                (reparse-symbol class_member_declaration) [5078 5746])
+                            ("setPdoForType" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$connection" variable (:type "Connection") (reparse-symbol formal_parameters) [6013 6035])
+                                    ("$type" variable (:default-value (6045 . 6049)) (reparse-symbol formal_parameters) [6037 6049]))                                  )
+                                (reparse-symbol class_member_declaration) [5980 6290])
+                            ("getConfig" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [6493 6498]))                                  )
+                                (reparse-symbol class_member_declaration) [6464 7074])
+                            ("getDefaultConnection" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [7165 7272])
+                            ("setDefaultConnection" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [7427 7432]))                                  )
+                                (reparse-symbol class_member_declaration) [7390 7503])
+                            ("extend" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable nil (reparse-symbol formal_parameters) [7691 7696])
+                                    ("$resolver" variable (:type "callable") (reparse-symbol formal_parameters) [7698 7716]))                                  )
+                                (reparse-symbol class_member_declaration) [7668 7775])
+                            ("getConnections" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [7871 7950])
+                            ("__call" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$method" variable nil (reparse-symbol formal_parameters) [8148 8155])
+                                    ("$parameters" variable nil (reparse-symbol formal_parameters) [8157 8168]))                                  )
+                                (reparse-symbol class_member_declaration) [8125 8263]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [181 8265])
+                    ("ConnectionFactory" alias
+                       (:definition "Illuminate\\Database\\Connectors\\ConnectionFactory"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [130 178])
+                    ("InvalidArgumentException" alias
+                       (:definition "InvalidArgumentException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [100 124])
+                    ("Str" alias
+                       (:definition "Illuminate\\Support\\Str"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [72 94])
+                    ("Arr" alias
+                       (:definition "Illuminate\\Support\\Arr"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [44 66]))                  
+                :type "namespace")
+                nil [8 8265]))          
+    :file "DatabaseManager.php"
+    :pointmax 8266
+    :fsize 8265
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Connection.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Database" type
+               (:members 
+                  ( ("Connection" type
+                       (:interfaces ("ConnectionInterface")
+                        :members 
+                          ( ("$pdo" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [712 727])
+                            ("$readPdo" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [821 840])
+                            ("$reconnector" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [942 965])
+                            ("$queryGrammar" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1091 1115])
+                            ("$schemaGrammar" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1243 1268])
+                            ("$postProcessor" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1405 1430])
+                            ("$events" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1549 1567])
+                            ("$fetchMode" variable
+                               (:typemodifiers ("protected")
+                                :default-value "PDO")
+                                (reparse-symbol class_member_declaration) [1661 1699])
+                            ("$transactions" variable
+                               (:typemodifiers ("protected")
+                                :default-value "0")
+                                (reparse-symbol class_member_declaration) [1786 1814])
+                            ("$queryLog" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [1915 1940])
+                            ("$loggingQueries" variable
+                               (:typemodifiers ("protected")
+                                :default-value "false")
+                                (reparse-symbol class_member_declaration) [2037 2071])
+                            ("$pretending" variable
+                               (:typemodifiers ("protected")
+                                :default-value "false")
+                                (reparse-symbol class_member_declaration) [2171 2201])
+                            ("$database" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [2292 2312])
+                            ("$doctrineConnection" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [2423 2453])
+                            ("$tablePrefix" variable
+                               (:typemodifiers ("protected")
+                                :default-value "''")
+                                (reparse-symbol class_member_declaration) [2545 2573])
+                            ("$config" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[]")
+                                (reparse-symbol class_member_declaration) [2674 2697])
+                            ("__construct" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$pdo" variable (:type "PDO") (reparse-symbol formal_parameters) [2956 2964])
+                                    ("$database" variable (:default-value (2978 . 2980)) (reparse-symbol formal_parameters) [2966 2980])
+                                    ("$tablePrefix" variable (:default-value (2997 . 2999)) (reparse-symbol formal_parameters) [2982 2999])
+                                    ("$config" variable
+                                       (:default-value (3017 . 3019)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [3001 3019]))                                  )
+                                (reparse-symbol class_member_declaration) [2928 3718])
+                            ("useDefaultQueryGrammar" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [3827 3942])
+                            ("getDefaultQueryGrammar" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [4077 4165])
+                            ("useDefaultSchemaGrammar" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [4275 4393])
+                            ("getDefaultSchemaGrammar" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [4530 4597])
+                            ("useDefaultPostProcessor" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [4713 4831])
+                            ("getDefaultPostProcessor" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [4971 5057])
+                            ("getSchemaBuilder" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [5194 5383])
+                            ("table" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$table" variable nil (reparse-symbol formal_parameters) [5568 5574]))                                  )
+                                (reparse-symbol class_member_declaration) [5546 5632])
+                            ("query" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [5752 5902])
+                            ("raw" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$value" variable nil (reparse-symbol formal_parameters) [6072 6078]))                                  )
+                                (reparse-symbol class_member_declaration) [6052 6130])
+                            ("selectOne" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [6327 6333])
+                                    ("$bindings" variable (:default-value (6347 . 6349)) (reparse-symbol formal_parameters) [6335 6349]))                                  )
+                                (reparse-symbol class_member_declaration) [6301 6477])
+                            ("selectFromWriteConnection" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [6684 6690])
+                                    ("$bindings" variable (:default-value (6704 . 6706)) (reparse-symbol formal_parameters) [6692 6706]))                                  )
+                                (reparse-symbol class_member_declaration) [6642 6775])
+                            ("select" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [6995 7001])
+                                    ("$bindings" variable (:default-value (7015 . 7017)) (reparse-symbol formal_parameters) [7003 7017])
+                                    ("$useReadPdo" variable (:default-value (7033 . 7037)) (reparse-symbol formal_parameters) [7019 7037]))                                  )
+                                (reparse-symbol class_member_declaration) [6972 7708])
+                            ("getPdoForSelect" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$useReadPdo" variable (:default-value (7896 . 7900)) (reparse-symbol formal_parameters) [7882 7900]))                                  )
+                                (reparse-symbol class_member_declaration) [7847 7981])
+                            ("insert" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [8169 8175])
+                                    ("$bindings" variable (:default-value (8189 . 8191)) (reparse-symbol formal_parameters) [8177 8191]))                                  )
+                                (reparse-symbol class_member_declaration) [8146 8256])
+                            ("update" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [8443 8449])
+                                    ("$bindings" variable (:default-value (8463 . 8465)) (reparse-symbol formal_parameters) [8451 8465]))                                  )
+                                (reparse-symbol class_member_declaration) [8420 8539])
+                            ("delete" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [8725 8731])
+                                    ("$bindings" variable (:default-value (8745 . 8747)) (reparse-symbol formal_parameters) [8733 8747]))                                  )
+                                (reparse-symbol class_member_declaration) [8702 8821])
+                            ("statement" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [9022 9028])
+                                    ("$bindings" variable (:default-value (9042 . 9044)) (reparse-symbol formal_parameters) [9030 9044]))                                  )
+                                (reparse-symbol class_member_declaration) [8996 9360])
+                            ("affectingStatement" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [9571 9577])
+                                    ("$bindings" variable (:default-value (9591 . 9593)) (reparse-symbol formal_parameters) [9579 9593]))                                  )
+                                (reparse-symbol class_member_declaration) [9536 10210])
+                            ("unprepared" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [10379 10385]))                                  )
+                                (reparse-symbol class_member_declaration) [10352 10609])
+                            ("prepareBindings" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$bindings" variable (:type "array") (reparse-symbol formal_parameters) [10772 10787]))                                  )
+                                (reparse-symbol class_member_declaration) [10740 11409])
+                            ("transaction" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [11602 11619]))                                  )
+                                (reparse-symbol class_member_declaration) [11574 12417])
+                            ("beginTransaction" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [12507 12954])
+                            ("commit" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [13050 13252])
+                            ("rollBack" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [13350 13816])
+                            ("transactionLevel" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [13910 13992])
+                            ("pretend" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [14154 14171]))                                  )
+                                (reparse-symbol class_member_declaration) [14130 14721])
+                            ("run" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [15012 15018])
+                                    ("$bindings" variable nil (reparse-symbol formal_parameters) [15020 15029])
+                                    ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [15031 15048]))                                  )
+                                (reparse-symbol class_member_declaration) [14989 16053])
+                            ("runQueryCallback" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [16327 16333])
+                                    ("$bindings" variable nil (reparse-symbol formal_parameters) [16335 16344])
+                                    ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [16346 16363]))                                  )
+                                (reparse-symbol class_member_declaration) [16291 17157])
+                            ("tryAgainIfCausedByLostConnection" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$e" variable (:type "QueryException") (reparse-symbol formal_parameters) [17544 17561])
+                                    ("$query" variable nil (reparse-symbol formal_parameters) [17563 17569])
+                                    ("$bindings" variable nil (reparse-symbol formal_parameters) [17571 17580])
+                                    ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [17582 17599]))                                  )
+                                (reparse-symbol class_member_declaration) [17492 17812])
+                            ("disconnect" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [17915 18002])
+                            ("reconnect" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [18123 18365])
+                            ("reconnectIfMissingConnection" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [18479 18654])
+                            ("logQuery" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$query" variable nil (reparse-symbol formal_parameters) [18874 18880])
+                                    ("$bindings" variable nil (reparse-symbol formal_parameters) [18882 18891])
+                                    ("$time" variable (:default-value (18901 . 18905)) (reparse-symbol formal_parameters) [18893 18905]))                                  )
+                                (reparse-symbol class_member_declaration) [18849 19200])
+                            ("listen" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [19370 19387]))                                  )
+                                (reparse-symbol class_member_declaration) [19347 19512])
+                            ("fireConnectionEvent" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$event" variable nil (reparse-symbol formal_parameters) [19672 19678]))                                  )
+                                (reparse-symbol class_member_declaration) [19633 19820])
+                            ("getElapsedTime" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$start" variable nil (reparse-symbol formal_parameters) [19991 19997]))                                  )
+                                (reparse-symbol class_member_declaration) [19957 20070])
+                            ("isDoctrineAvailable" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [20149 20255])
+                            ("getDoctrineColumn" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$table" variable nil (reparse-symbol formal_parameters) [20469 20475])
+                                    ("$column" variable nil (reparse-symbol formal_parameters) [20477 20484]))                                  )
+                                (reparse-symbol class_member_declaration) [20435 20621])
+                            ("getDoctrineSchemaManager" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [20773 20920])
+                            ("getDoctrineConnection" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [21049 21420])
+                            ("getPdo" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [21508 21571])
+                            ("getReadPdo" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [21676 21848])
+                            ("setPdo" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$pdo" variable nil (reparse-symbol formal_parameters) [21983 21987]))                                  )
+                                (reparse-symbol class_member_declaration) [21960 22194])
+                            ("setReadPdo" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$pdo" variable nil (reparse-symbol formal_parameters) [22350 22354]))                                  )
+                                (reparse-symbol class_member_declaration) [22323 22421])
+                            ("setReconnector" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$reconnector" variable (:type "callable") (reparse-symbol formal_parameters) [22593 22614]))                                  )
+                                (reparse-symbol class_member_declaration) [22562 22693])
+                            ("getName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [22790 22868])
+                            ("getConfig" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$option" variable nil (reparse-symbol formal_parameters) [23028 23035]))                                  )
+                                (reparse-symbol class_member_declaration) [23002 23097])
+                            ("getDriverName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [23180 23287])
+                            ("getQueryGrammar" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [23428 23509])
+                            ("setQueryGrammar" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$grammar" variable (:type "Query\\Grammars\\Grammar") (reparse-symbol formal_parameters) [23712 23743]))                                  )
+                                (reparse-symbol class_member_declaration) [23680 23796])
+                            ("getSchemaGrammar" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [23939 24022])
+                            ("setSchemaGrammar" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$grammar" variable (:type "Schema\\Grammars\\Grammar") (reparse-symbol formal_parameters) [24228 24260]))                                  )
+                                (reparse-symbol class_member_declaration) [24195 24314])
+                            ("getPostProcessor" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [24466 24549])
+                            ("setPostProcessor" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$processor" variable (:type "Processor") (reparse-symbol formal_parameters) [24766 24786]))                                  )
+                                (reparse-symbol class_member_declaration) [24733 24842])
+                            ("getEventDispatcher" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [24982 25060])
+                            ("setEventDispatcher" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$events" variable (:type "Dispatcher") (reparse-symbol formal_parameters) [25268 25286]))                                  )
+                                (reparse-symbol class_member_declaration) [25233 25332])
+                            ("pretending" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [25432 25515])
+                            ("getFetchMode" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [25617 25692])
+                            ("setFetchMode" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$fetchMode" variable nil (reparse-symbol formal_parameters) [25854 25864]))                                  )
+                                (reparse-symbol class_member_declaration) [25825 25916])
+                            ("getQueryLog" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [26003 26076])
+                            ("flushQueryLog" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [26153 26226])
+                            ("enableQueryLog" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [26322 26404])
+                            ("disableQueryLog" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [26501 26585])
+                            ("logging" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [26682 26757])
+                            ("getDatabaseName" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [26855 26932])
+                            ("setDatabaseName" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$database" variable nil (reparse-symbol formal_parameters) [27095 27104]))                                  )
+                                (reparse-symbol class_member_declaration) [27063 27154])
+                            ("getTablePrefix" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [27253 27332])
+                            ("setTablePrefix" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$prefix" variable nil (reparse-symbol formal_parameters) [27497 27504]))                                  )
+                                (reparse-symbol class_member_declaration) [27466 27615])
+                            ("withTablePrefix" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$grammar" variable (:type "Grammar") (reparse-symbol formal_parameters) [27826 27842]))                                  )
+                                (reparse-symbol class_member_declaration) [27794 27935]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [552 27937])
+                    ("QueryGrammar" alias
+                       (:definition "Illuminate\\Database\\Query\\Grammars\\Grammar"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [491 549])
+                    ("SchemaBuilder" alias
+                       (:definition "Illuminate\\Database\\Schema\\Builder"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [434 485])
+                    ("QueryBuilder" alias
+                       (:definition "Illuminate\\Database\\Query\\Builder"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [379 428])
+                    ("DoctrineConnection" alias
+                       (:definition "Doctrine\\DBAL\\Connection"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [327 373])
+                    ("Processor" alias
+                       (:definition "Illuminate\\Database\\Query\\Processors\\Processor"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [275 321])
+                    ("Dispatcher" alias
+                       (:definition "Illuminate\\Contracts\\Events\\Dispatcher"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [231 269])
+                    ("Expression" alias
+                       (:definition "Illuminate\\Database\\Query\\Expression"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [189 225])
+                    ("Arr" alias
+                       (:definition "Illuminate\\Support\\Arr"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [161 183])
+                    ("DateTimeInterface" alias
+                       (:definition "DateTimeInterface"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [138 155])
+                    ("RuntimeException" alias
+                       (:definition "RuntimeException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [116 132])
+                    ("LogicException" alias
+                       (:definition "LogicException"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [96 110])
+                    ("Throwable" alias
+                       (:definition "Throwable"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [81 90])
+                    ("Exception" alias
+                       (:definition "Exception"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [66 75])
+                    ("Closure" alias
+                       (:definition "Closure"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [53 60])
+                    ("PDO" alias
+                       (:definition "PDO"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [44 47]))                  
+                :type "namespace")
+                nil [8 27937]))          
+    :file "Connection.php"
+    :pointmax 27938
+    :fsize 27937
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax '((T_SEMI 632 . 633) (IDENTIFIER 610 . 632) (T_USE 606 . 609) (T_SEMI 632 . 633) (IDENTIFIER 610 . 632) (T_USE 606 . 609))
+    )
+   (semanticdb-table "MySqlConnection.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Database" type
+               (:members 
+                  ( ("MySqlConnection" type
+                       (:superclasses "Connection"
+                        :members 
+                          ( ("getSchemaBuilder" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [526 714])
+                            ("getDefaultQueryGrammar" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [854 966])
+                            ("getDefaultSchemaGrammar" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1108 1222])
+                            ("getDefaultPostProcessor" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1367 1458])
+                            ("getDoctrineDriver" function (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [1577 1662]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [343 1664])
+                    ("SchemaGrammar" alias
+                       (:definition "Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [275 340])
+                    ("QueryGrammar" alias
+                       (:definition "Illuminate\\Database\\Query\\Grammars\\MySqlGrammar"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [206 269])
+                    ("DoctrineDriver" alias
+                       (:definition "Doctrine\\DBAL\\Driver\\PDOMySql\\Driver"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [146 200])
+                    ("MySqlProcessor" alias
+                       (:definition "Illuminate\\Database\\Query\\Processors\\MySqlProcessor"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [89 140])
+                    ("MySqlBuilder" alias
+                       (:definition "Illuminate\\Database\\Schema\\MySqlBuilder"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [44 83]))                  
+                :type "namespace")
+                nil [8 1664]))          
+    :file "MySqlConnection.php"
+    :pointmax 1665
+    :fsize 1664
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!vendor!laravel!framework!src!Illuminate!Database!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

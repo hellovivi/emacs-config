@@ -1,0 +1,233 @@
+;; Object friend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "friend/"
+  :tables (list 
+   (semanticdb-table "NearbyPerson.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Service_Data_Friend_NearbyPerson" type
+               (:members 
+                  ( ("updateNearbyPersonInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$info" variable nil (reparse-symbol formal_parameters) [106 111]))                          )
+                        (reparse-symbol class_member_declaration) [67 804])
+                    ("updateGpsInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [839 846])
+                            ("$longitude" variable nil (reparse-symbol formal_parameters) [847 857])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [858 867]))                          )
+                        (reparse-symbol class_member_declaration) [809 2863])
+                    ("getNearbyPersonList" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [2905 2915])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [2916 2925])
+                            ("$page" variable nil (reparse-symbol formal_parameters) [2926 2931])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [2932 2938])
+                            ("$gender" variable nil (reparse-symbol formal_parameters) [2939 2946])
+                            ("$userId" variable (:default-value (2955 . 2956)) (reparse-symbol formal_parameters) [2947 2956]))                          )
+                        (reparse-symbol class_member_declaration) [2869 6128])
+                    ("getNearbyPerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [6166 6176])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [6177 6186])
+                            ("$gender" variable nil (reparse-symbol formal_parameters) [6187 6194])
+                            ("$userId" variable (:default-value (6203 . 6204)) (reparse-symbol formal_parameters) [6195 6204]))                          )
+                        (reparse-symbol class_member_declaration) [6134 9131])
+                    ("getAllRecommendPersonList" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [9179 9189])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [9190 9199])
+                            ("$page" variable nil (reparse-symbol formal_parameters) [9200 9205])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [9206 9212])
+                            ("$gender" variable nil (reparse-symbol formal_parameters) [9213 9220])
+                            ("$userId" variable (:default-value (9229 . 9230)) (reparse-symbol formal_parameters) [9221 9230])
+                            ("$type" variable (:default-value (9237 . 9238)) (reparse-symbol formal_parameters) [9231 9238]))                          )
+                        (reparse-symbol class_member_declaration) [9137 10255])
+                    ("getRecommendPersonList" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [10300 10310])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [10311 10320])
+                            ("$page" variable nil (reparse-symbol formal_parameters) [10321 10326])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [10327 10333])
+                            ("$gender" variable nil (reparse-symbol formal_parameters) [10334 10341])
+                            ("$userId" variable (:default-value (10350 . 10351)) (reparse-symbol formal_parameters) [10342 10351])
+                            ("$type" variable (:default-value (10358 . 10359)) (reparse-symbol formal_parameters) [10352 10359])
+                            ("$miniType" variable (:default-value (10370 . 10371)) (reparse-symbol formal_parameters) [10360 10371]))                          )
+                        (reparse-symbol class_member_declaration) [10261 11641])
+                    ("getTypeName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [11675 11682])
+                            ("$type" variable nil (reparse-symbol formal_parameters) [11683 11688])
+                            ("$miniType" variable nil (reparse-symbol formal_parameters) [11689 11698]))                          )
+                        (reparse-symbol class_member_declaration) [11647 12429])
+                    ("getNearbyPersonByTimestamp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [12478 12485])
+                            ("$longitude" variable nil (reparse-symbol formal_parameters) [12486 12496])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [12497 12506])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [12507 12513])
+                            ("$timestamp" variable nil (reparse-symbol formal_parameters) [12514 12524])
+                            ("$type" variable nil (reparse-symbol formal_parameters) [12525 12530]))                          )
+                        (reparse-symbol class_member_declaration) [12435 14071])
+                    ("getRecommendPerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [14112 14122])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [14123 14132])
+                            ("$gender" variable nil (reparse-symbol formal_parameters) [14133 14140])
+                            ("$userId" variable nil (reparse-symbol formal_parameters) [14141 14148])
+                            ("$type" variable nil (reparse-symbol formal_parameters) [14149 14154])
+                            ("$miniType" variable nil (reparse-symbol formal_parameters) [14155 14164]))                          )
+                        (reparse-symbol class_member_declaration) [14077 17215])
+                    ("getCache" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [17221 17618])
+                    ("getActivePerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$timestamp" variable nil (reparse-symbol formal_parameters) [17676 17686]))                          )
+                        (reparse-symbol class_member_declaration) [17644 20894])
+                    ("getChatUpPerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [20932 20942])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [20943 20952])
+                            ("$gender" variable nil (reparse-symbol formal_parameters) [20953 20960])
+                            ("$requestUserId" variable nil (reparse-symbol formal_parameters) [20961 20975])
+                            ("$filterIds" variable (:default-value (20987 . 20989)) (reparse-symbol formal_parameters) [20976 20989]))                          )
+                        (reparse-symbol class_member_declaration) [20900 25870])
+                    ("uniqueRand" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$min" variable nil (reparse-symbol formal_parameters) [25903 25907])
+                            ("$max" variable nil (reparse-symbol formal_parameters) [25908 25912])
+                            ("$num" variable nil (reparse-symbol formal_parameters) [25913 25917]))                          )
+                        (reparse-symbol class_member_declaration) [25876 26147])
+                    ("rad" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$d" variable nil (reparse-symbol formal_parameters) [26172 26174]))                          )
+                        (reparse-symbol class_member_declaration) [26152 26224])
+                    ("getDistance" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitudeA" variable nil (reparse-symbol formal_parameters) [26271 26282])
+                            ("$latitudeA" variable nil (reparse-symbol formal_parameters) [26283 26293])
+                            ("$longitudeB" variable nil (reparse-symbol formal_parameters) [26294 26305])
+                            ("$latitudeB" variable nil (reparse-symbol formal_parameters) [26306 26316]))                          )
+                        (reparse-symbol class_member_declaration) [26243 26642])
+                    ("nearbyPersonAlgorithm" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$personA" variable nil (reparse-symbol formal_parameters) [26701 26709])
+                            ("$personB" variable nil (reparse-symbol formal_parameters) [26710 26718]))                          )
+                        (reparse-symbol class_member_declaration) [26663 27144])
+                    ("getNearbyWeight" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$weights" variable nil (reparse-symbol formal_parameters) [27196 27204])
+                            ("$key" variable nil (reparse-symbol formal_parameters) [27205 27209]))                          )
+                        (reparse-symbol class_member_declaration) [27164 27417]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 27419]))          
+    :file "NearbyPerson.class.php"
+    :pointmax 27420
+    :fsize 27615
+    :lastmodtime '(22080 32740 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "UserInfo.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Service_Data_Friend_UserInfo" type
+               (:members 
+                  ( ("$lastSql" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [47 64])
+                    ("__destruct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [69 187])
+                    ("assignImId" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [192 593])
+                    ("assignGroupId" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [598 1013])
+                    ("createImUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [1047 1054])
+                            ("$userInfo" variable nil (reparse-symbol formal_parameters) [1055 1064]))                          )
+                        (reparse-symbol class_member_declaration) [1018 5135])
+                    ("getImUserInfoWithLabel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$selfUserId" variable nil (reparse-symbol formal_parameters) [5180 5191])
+                            ("$userId" variable nil (reparse-symbol formal_parameters) [5193 5200]))                          )
+                        (reparse-symbol class_member_declaration) [5141 7113])
+                    ("updateImUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [7153 7160])
+                            ("$userInfo" variable nil (reparse-symbol formal_parameters) [7161 7170]))                          )
+                        (reparse-symbol class_member_declaration) [7120 9488])
+                    ("updateNearbyPersonInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [9533 9540])
+                            ("$userInfo" variable nil (reparse-symbol formal_parameters) [9541 9550]))                          )
+                        (reparse-symbol class_member_declaration) [9494 10265])
+                    ("verifyUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [10302 10309])
+                            ("$userInfo" variable nil (reparse-symbol formal_parameters) [10310 10319]))                          )
+                        (reparse-symbol class_member_declaration) [10271 11101])
+                    ("getImUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [11137 11144]))                          )
+                        (reparse-symbol class_member_declaration) [11107 11423])
+                    ("getImUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [11454 11461]))                          )
+                        (reparse-symbol class_member_declaration) [11428 15526])
+                    ("searchImUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$imId" variable nil (reparse-symbol formal_parameters) [15564 15569]))                          )
+                        (reparse-symbol class_member_declaration) [15531 16518])
+                    ("getImUserLevel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [16554 16561]))                          )
+                        (reparse-symbol class_member_declaration) [16523 16846])
+                    ("getImUserUpdateTime" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [16901 16908]))                          )
+                        (reparse-symbol class_member_declaration) [16865 17367])
+                    ("setGroupIdSucc" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$groupId" variable nil (reparse-symbol formal_parameters) [17403 17411]))                          )
+                        (reparse-symbol class_member_declaration) [17372 17569])
+                    ("getAstro" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$month" variable nil (reparse-symbol formal_parameters) [17599 17605])
+                            ("$day" variable nil (reparse-symbol formal_parameters) [17606 17610]))                          )
+                        (reparse-symbol class_member_declaration) [17574 18176])
+                    ("getCache" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [18181 18578]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 18580]))          
+    :file "UserInfo.class.php"
+    :pointmax 18581
+    :fsize 19050
+    :lastmodtime '(22080 32740 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!im!webim!group_chat!models!service!data!friend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

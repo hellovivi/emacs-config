@@ -1,0 +1,28 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "config.test.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("\"/data/home/yujiao/www/ganji/ganji_online/code_base2/config/config.inc.php\"" include nil (reparse-symbol compilation_units) [20 95]))          
+    :file "config.test.php"
+    :pointmax 13833
+    :fsize 14160
+    :lastmodtime '(22102 28585 0 0)
+    :unmatched-syntax '((EPILOGUE 13830 . 13832) (BRACE_BLOCK 208 . 13829) (IDENTIFIER 196 . 207) (T_CLASS 190 . 195) (T_SEMI 188 . 189) (PAREN_BLOCK 153 . 188) (IDENTIFIER 147 . 153) (T_SEMI 145 . 146) (PAREN_BLOCK 104 . 145) (IDENTIFIER 97 . 103))
+    )
+   (semanticdb-table "config.online.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "config.online.php"
+    :pointmax 13644
+    :fsize 14005
+    :lastmodtime '(22083 12345 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 198 . 13643) (IDENTIFIER 186 . 197) (T_CLASS 180 . 185) (T_SEMI 178 . 179) (PAREN_BLOCK 143 . 178) (IDENTIFIER 137 . 143) (T_SEMI 135 . 136) (PAREN_BLOCK 94 . 135) (IDENTIFIER 87 . 93) (T_SEMI 85 . 86) (STRING_LITERAL 41 . 85) (T_DOT 39 . 40) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!im!webim!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

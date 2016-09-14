@@ -1,0 +1,64 @@
+;; Object Http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Http/"
+  :tables (list 
+   (semanticdb-table "routes.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("User" alias
+               (:definition "App\\User"
+                :aliasclass "alias")
+                (reparse-symbol compilation_units) [399 407]))          
+    :file "routes.php"
+    :pointmax 1058
+    :fsize 1057
+    :lastmodtime '(22102 37094 0 0)
+    :unmatched-syntax '((T_SEMI 1056 . 1057) (PAREN_BLOCK 1030 . 1056) (IDENTIFIER 1022 . 1030) (T_PAAMAYIM_NEKUDOTAYIM 1020 . 1022) (IDENTIFIER 1015 . 1020) (T_SEMI 869 . 870) (PAREN_BLOCK 814 . 869) (IDENTIFIER 811 . 814) (T_PAAMAYIM_NEKUDOTAYIM 809 . 811) (IDENTIFIER 804 . 809) (T_SEMI 802 . 803) (PAREN_BLOCK 763 . 802) (IDENTIFIER 760 . 763) (T_PAAMAYIM_NEKUDOTAYIM 758 . 760) (IDENTIFIER 753 . 758) (T_SEMI 751 . 752) (PAREN_BLOCK 720 . 751) (IDENTIFIER 717 . 720) (T_PAAMAYIM_NEKUDOTAYIM 715 . 717) (IDENTIFIER 710 . 715) (T_SEMI 707 . 708) (PAREN_BLOCK 651 . 707) (IDENTIFIER 647 . 651) (T_PAAMAYIM_NEKUDOTAYIM 645 . 647) (IDENTIFIER 640 . 645) (T_SEMI 638 . 639) (PAREN_BLOCK 584 . 638) (IDENTIFIER 581 . 584) (T_PAAMAYIM_NEKUDOTAYIM 579 . 581) (IDENTIFIER 574 . 579) (T_SEMI 470 . 471) (PAREN_BLOCK 420 . 470) (IDENTIFIER 417 . 420) (T_PAAMAYIM_NEKUDOTAYIM 415 . 417) (IDENTIFIER 410 . 415))
+    )
+   (semanticdb-table "Kernel.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App\\Http" type
+               (:members 
+                  ( ("Kernel" type
+                       (:superclasses "HttpKernel"
+                        :members 
+                          ( ("$middleware" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[
+        \\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode::class,
+        \\App\\Http\\Middleware\\EncryptCookies::class,
+        \\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse::class,
+        \\Illuminate\\Session\\Middleware\\StartSession::class,
+        \\Illuminate\\View\\Middleware\\ShareErrorsFromSession::class,
+        \\App\\Http\\Middleware\\VerifyCsrfToken::class,
+    ]")
+                                (reparse-symbol class_member_declaration) [217 633])
+                            ("$routeMiddleware" variable
+                               (:typemodifiers ("protected")
+                                :default-value "[
+        'auth' => \\App\\Http\\Middleware\\Authenticate::class,
+        'auth.basic' => \\Illuminate\\Auth\\Middleware\\AuthenticateWithBasicAuth::class,
+        'guest' => \\App\\Http\\Middleware\\RedirectIfAuthenticated::class,
+        'auth.weiliao' => \\App\\Http\\Middleware\\AuthenticateOnceWithWeiLiao::class,
+    ]")
+                                (reparse-symbol class_member_declaration) [723 1061]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [83 1063])
+                    ("HttpKernel" alias
+                       (:definition "Illuminate\\Foundation\\Http\\Kernel"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [33 80]))                  
+                :type "namespace")
+                nil [8 1063]))          
+    :file "Kernel.php"
+    :pointmax 1064
+    :fsize 1063
+    :lastmodtime '(22102 37116 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!app!Http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

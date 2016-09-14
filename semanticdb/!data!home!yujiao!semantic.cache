@@ -1,0 +1,18 @@
+;; Object yujiao/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yujiao/"
+  :tables (list 
+    (semanticdb-table "t.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "t.php"
+    :pointmax 1290
+    :fsize 1289
+    :lastmodtime '(22104 20382 0 0)
+    :unmatched-syntax '((T_SEMI 1288 . 1289) (PAREN_BLOCK 1284 . 1288) (IDENTIFIER 1277 . 1284) (T_SEMI 1275 . 1276) (PAREN_BLOCK 1267 . 1275) (T_UNSET 1262 . 1267) (T_SEMI 1260 . 1261) (PAREN_BLOCK 1256 . 1260) (IDENTIFIER 1249 . 1256) (T_SEMI 1247 . 1248) (NUMBER_LITERAL 1245 . 1247) (T_EQ 1243 . 1244) (IDENTIFIER 1240 . 1242) (T_DEREF 1238 . 1240) (T_VARIABLE 1236 . 1238) (T_SEMI 1202 . 1203) (PAREN_BLOCK 1198 . 1202) (IDENTIFIER 1187 . 1198) (T_EQ 1185 . 1186) (T_VARIABLE 1182 . 1184) (T_SEMI 1160 . 1161) (PAREN_BLOCK 1156 . 1160) (IDENTIFIER 1147 . 1156) (T_EQ 1145 . 1146) (T_VARIABLE 1142 . 1144) (T_SEMI 1140 . 1141) (STRING_LITERAL 441 . 1140) (T_EQ 440 . 441) (T_VARIABLE 438 . 440))
+    )
+   )
+  :file "!data!home!yujiao!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,113 @@
+;; Object friend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "friend/"
+  :tables (list 
+   (semanticdb-table "DbNearbyPerson.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Dao_Friend_DbNearbyPerson" type
+               (:members 
+                  ( ("$conn" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [44 58])
+                    ("$db" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [63 75])
+                    ("$collection" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [80 100])
+                    ("__construct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [105 1168])
+                    ("__destruct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [1173 1242])
+                    ("updateNearbyPersonInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userInfo" variable nil (reparse-symbol formal_parameters) [1302 1311]))                          )
+                        (reparse-symbol class_member_declaration) [1263 1459])
+                    ("updateGpsInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userInfo" variable nil (reparse-symbol formal_parameters) [1521 1530]))                          )
+                        (reparse-symbol class_member_declaration) [1491 1700])
+                    ("getNearbyPerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [1784 1794])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [1795 1804])
+                            ("$num" variable nil (reparse-symbol formal_parameters) [1805 1809])
+                            ("$maxDis" variable nil (reparse-symbol formal_parameters) [1810 1817])
+                            ("$queryInfo" variable nil (reparse-symbol formal_parameters) [1818 1828]))                          )
+                        (reparse-symbol class_member_declaration) [1752 2234])
+                    ("getActivePerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$timestamp" variable nil (reparse-symbol formal_parameters) [2292 2302]))                          )
+                        (reparse-symbol class_member_declaration) [2260 2517])
+                    ("getActivePersonByTimeRange" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$timeStart" variable nil (reparse-symbol formal_parameters) [2588 2598])
+                            ("$timeEnd" variable nil (reparse-symbol formal_parameters) [2600 2608]))                          )
+                        (reparse-symbol class_member_declaration) [2545 2841])
+                    ("getNearbyPersonByTimestamp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [2913 2923])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [2924 2933])
+                            ("$num" variable nil (reparse-symbol formal_parameters) [2934 2938])
+                            ("$maxDis" variable nil (reparse-symbol formal_parameters) [2939 2946])
+                            ("$timestamp" variable nil (reparse-symbol formal_parameters) [2947 2957])
+                            ("$queryInfo" variable nil (reparse-symbol formal_parameters) [2958 2968]))                          )
+                        (reparse-symbol class_member_declaration) [2870 3439]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 3441]))          
+    :file "DbNearbyPerson.class.php"
+    :pointmax 3442
+    :fsize 3669
+    :lastmodtime '(22080 32741 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DbUserInfo.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Dao_Friend_DbUserInfo" type
+               (:members 
+                  ( ("$dbHandler" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [40 58])
+                    ("$userId" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [63 79])
+                    ("$tableName" variable
+                       (:typemodifiers ("private")
+                        :default-value "\"userInfo_\"")
+                        (reparse-symbol class_member_declaration) [84 115])
+                    ("$lastSql" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [120 136])
+                    ("__construct" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [169 176]))                          )
+                        (reparse-symbol class_member_declaration) [141 344])
+                    ("createUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$arrFields" variable nil (reparse-symbol formal_parameters) [376 386]))                          )
+                        (reparse-symbol class_member_declaration) [349 540])
+                    ("updateUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$arrFields" variable nil (reparse-symbol formal_parameters) [576 586]))                          )
+                        (reparse-symbol class_member_declaration) [545 767])
+                    ("getUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [800 807]))                          )
+                        (reparse-symbol class_member_declaration) [772 1018])
+                    ("getUserInfoByPage" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$page" variable nil (reparse-symbol formal_parameters) [1068 1073])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [1074 1080]))                          )
+                        (reparse-symbol class_member_declaration) [1034 1294]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 1296]))          
+    :file "DbUserInfo.class.php"
+    :pointmax 1297
+    :fsize 1296
+    :lastmodtime '(22080 32741 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!im!webim!group_chat!models!dao!friend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

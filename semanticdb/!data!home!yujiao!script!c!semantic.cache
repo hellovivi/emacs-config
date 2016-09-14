@@ -1,0 +1,53 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables
+  (list
+    (semanticdb-table "fileline.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 18])
+            ("stdlib.h" include (:system-flag t) nil [19 37])
+            ("do_heading" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55 70]))                  
+                :type "void")
+                nil [39 71])
+            ("line" variable
+               (:default-value "0"
+                :type "int")
+                nil [72 93])
+            ("page" variable
+               (:default-value "0"
+                :type "int")
+                nil [72 93])
+            ("main" function
+               (:arguments 
+                  ( ("argv" variable (:type "int") (reparse-symbol arg-sub-list) [104 113])
+                    ("argc" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [113 126]))                  
+                :type "int")
+                nil [95 635])
+            ("do_heading" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [653 668]))                  
+                :type "void")
+                nil [637 778]))          
+      :file "fileline.c"
+      :pointmax 779
+      :fsize 778
+      :lastmodtime '(22186 55167 0 0)
+      :unmatched-syntax nil))
+  :file "!data!home!yujiao!script!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,85 @@
+;; Object libs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libs/"
+  :tables (list 
+    (semanticdb-table "CliRep.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("APP\\Providers\\Wtable\\libs" type
+               (:members 
+                  ( ("CliRep" type
+                       (:members 
+                          ( ("$bid" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [63 76])
+                            ("$cid" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [81 94])
+                            ("$dbid" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [99 113])
+                            ("$password" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [118 136])
+                            ("$dns" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [141 154])
+                            ("$timeout" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [159 176])
+                            ("$net" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [181 193])
+                            ("$isAuth" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [198 213])
+                            ("__Construct" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$bid" variable nil (reparse-symbol formal_parameters) [247 251])
+                                    ("$passwd" variable nil (reparse-symbol formal_parameters) [252 259])
+                                    ("$dns" variable nil (reparse-symbol formal_parameters) [260 264])
+                                    ("$timeout" variable (:default-value (274 . 303)) (reparse-symbol formal_parameters) [265 303]))                                  )
+                                (reparse-symbol class_member_declaration) [219 550])
+                            ("__destruct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [555 625])
+                            ("init" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [630 749])
+                            ("auth" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$net" variable (:default-value (780 . 789)) (reparse-symbol formal_parameters) [775 789])
+                                    ("$passwd" variable (:default-value (798 . 812)) (reparse-symbol formal_parameters) [790 812]))                                  )
+                                (reparse-symbol class_member_declaration) [754 921])
+                            ("doOneOp" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$net" variable nil (reparse-symbol formal_parameters) [950 954])
+                                    ("$isZop" variable nil (reparse-symbol formal_parameters) [955 961])
+                                    ("$cmd" variable nil (reparse-symbol formal_parameters) [963 967])
+                                    ("$tableId" variable nil (reparse-symbol formal_parameters) [969 977])
+                                    ("$rowKey" variable nil (reparse-symbol formal_parameters) [979 986])
+                                    ("$colKey" variable nil (reparse-symbol formal_parameters) [988 995])
+                                    ("$value" variable nil (reparse-symbol formal_parameters) [997 1003])
+                                    ("$score" variable nil (reparse-symbol formal_parameters) [1005 1011])
+                                    ("$cas" variable nil (reparse-symbol formal_parameters) [1013 1017]))                                  )
+                                (reparse-symbol class_member_declaration) [926 2219])
+                            ("doMultiOp" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$net" variable nil (reparse-symbol formal_parameters) [2251 2255])
+                                    ("$isZop" variable nil (reparse-symbol formal_parameters) [2256 2262])
+                                    ("$cmd" variable nil (reparse-symbol formal_parameters) [2263 2267])
+                                    ("$args" variable nil (reparse-symbol formal_parameters) [2268 2273]))                                  )
+                                (reparse-symbol class_member_declaration) [2225 3327])
+                            ("doScan" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$net" variable nil (reparse-symbol formal_parameters) [3843 3847])
+                                    ("$isZop" variable nil (reparse-symbol formal_parameters) [3849 3855])
+                                    ("$tableId" variable nil (reparse-symbol formal_parameters) [3857 3865])
+                                    ("$rowKey" variable nil (reparse-symbol formal_parameters) [3867 3874])
+                                    ("$colKey" variable nil (reparse-symbol formal_parameters) [3876 3883])
+                                    ("$score" variable nil (reparse-symbol formal_parameters) [3884 3890])
+                                    ("$isStart" variable nil (reparse-symbol formal_parameters) [3892 3900])
+                                    ("$asc" variable nil (reparse-symbol formal_parameters) [3902 3906])
+                                    ("$isOrderByScore" variable nil (reparse-symbol formal_parameters) [3908 3923])
+                                    ("$num" variable nil (reparse-symbol formal_parameters) [3925 3929]))                                  )
+                                (reparse-symbol class_member_declaration) [3820 6041]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [45 6043]))                  
+                :type "namespace")
+                nil [7 6043]))          
+    :file "CliRep.php"
+    :pointmax 6047
+    :fsize 6046
+    :lastmodtime '(22089 53205 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 57 . 6043) (IDENTIFIER 51 . 57) (T_CLASS 45 . 50) (T_SEMI 42 . 43) (IDENTIFIER 38 . 42) (T_NAMESPACE_SEP 37 . 38) (IDENTIFIER 31 . 37) (T_NAMESPACE_SEP 30 . 31) (IDENTIFIER 21 . 30) (T_NAMESPACE_SEP 20 . 21) (IDENTIFIER 17 . 20) (T_NAMESPACE 7 . 16))
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!app!Providers!Wtable!libs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

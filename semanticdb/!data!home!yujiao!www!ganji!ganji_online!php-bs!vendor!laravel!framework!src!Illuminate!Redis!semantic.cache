@@ -1,0 +1,133 @@
+;; Object Redis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Redis/"
+  :tables (list 
+   (semanticdb-table "RedisServiceProvider.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Redis" type
+               (:members 
+                  ( ("RedisServiceProvider" type
+                       (:superclasses "ServiceProvider"
+                        :members 
+                          ( ("$defer" variable
+                               (:typemodifiers ("protected")
+                                :default-value "true")
+                                (reparse-symbol class_member_declaration) [232 256])
+                            ("register" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [343 517])
+                            ("provides" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [617 681]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [78 683])
+                    ("ServiceProvider" alias
+                       (:definition "Illuminate\\Support\\ServiceProvider"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [41 75]))                  
+                :type "namespace")
+                nil [8 683]))          
+    :file "RedisServiceProvider.php"
+    :pointmax 684
+    :fsize 683
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Database.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Redis" type
+               (:members 
+                  ( ("Database" type
+                       (:interfaces ("DatabaseContract")
+                        :members 
+                          ( ("$clients" variable (:typemodifiers ("protected")) (reparse-symbol class_member_declaration) [290 309])
+                            ("__construct" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$servers" variable
+                                       (:default-value (481 . 483)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [464 483]))                                  )
+                                (reparse-symbol class_member_declaration) [436 815])
+                            ("createAggregateClient" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$servers" variable (:type "array") (reparse-symbol formal_parameters) [1026 1040])
+                                    ("$options" variable
+                                       (:default-value (1059 . 1061)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [1042 1061]))                                  )
+                                (reparse-symbol class_member_declaration) [985 1150])
+                            ("createSingleClients" function
+                               (:typemodifiers ("protected")
+                                :arguments 
+                                  ( ("$servers" variable (:type "array") (reparse-symbol formal_parameters) [1354 1368])
+                                    ("$options" variable
+                                       (:default-value (1387 . 1389)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [1370 1389]))                                  )
+                                (reparse-symbol class_member_declaration) [1315 1570])
+                            ("connection" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$name" variable (:default-value (1756 . 1765)) (reparse-symbol formal_parameters) [1748 1765]))                                  )
+                                (reparse-symbol class_member_declaration) [1721 1839])
+                            ("command" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$method" variable nil (reparse-symbol formal_parameters) [2028 2035])
+                                    ("$parameters" variable
+                                       (:default-value (2057 . 2059)
+                                        :type "array")
+                                        (reparse-symbol formal_parameters) [2037 2059]))                                  )
+                                (reparse-symbol class_member_declaration) [2004 2160])
+                            ("subscribe" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$channels" variable nil (reparse-symbol formal_parameters) [2433 2442])
+                                    ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [2444 2461])
+                                    ("$connection" variable (:default-value (2477 . 2481)) (reparse-symbol formal_parameters) [2463 2481])
+                                    ("$method" variable (:default-value (2493 . 2504)) (reparse-symbol formal_parameters) [2483 2504]))                                  )
+                                (reparse-symbol class_member_declaration) [2407 2895])
+                            ("psubscribe" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$channels" variable nil (reparse-symbol formal_parameters) [3140 3149])
+                                    ("$callback" variable (:type "Closure") (reparse-symbol formal_parameters) [3151 3168])
+                                    ("$connection" variable (:default-value (3184 . 3188)) (reparse-symbol formal_parameters) [3170 3188]))                                  )
+                                (reparse-symbol class_member_declaration) [3113 3283])
+                            ("__call" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("$method" variable nil (reparse-symbol formal_parameters) [3463 3470])
+                                    ("$parameters" variable nil (reparse-symbol formal_parameters) [3472 3483]))                                  )
+                                (reparse-symbol class_member_declaration) [3440 3549]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [159 3551])
+                    ("DatabaseContract" alias
+                       (:definition "Illuminate\\Contracts\\Redis\\Database"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [101 156])
+                    ("Arr" alias
+                       (:definition "Illuminate\\Support\\Arr"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [73 95])
+                    ("Client" alias
+                       (:definition "Predis\\Client"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [54 67])
+                    ("Closure" alias
+                       (:definition "Closure"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [41 48]))                  
+                :type "namespace")
+                nil [8 3551]))          
+    :file "Database.php"
+    :pointmax 3552
+    :fsize 3551
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!vendor!laravel!framework!src!Illuminate!Redis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

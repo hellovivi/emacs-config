@@ -1,0 +1,18 @@
+;; Object php-bs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php-bs/"
+  :tables (list 
+   (semanticdb-table "composer.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "composer.json"
+    :pointmax 1320
+    :fsize 1319
+    :lastmodtime '(22095 2097 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

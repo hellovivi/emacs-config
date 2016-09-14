@@ -1,0 +1,18 @@
+;; Object Schema/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Schema/"
+  :tables (list 
+   (semanticdb-table "Blueprint.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "Blueprint.php"
+    :pointmax 5489
+    :fsize 5488
+    :lastmodtime '(22047 38652 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!vendor!jenssegers!mongodb!src!Jenssegers!Mongodb!Schema!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

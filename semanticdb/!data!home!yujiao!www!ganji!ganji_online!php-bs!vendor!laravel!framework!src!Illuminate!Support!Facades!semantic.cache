@@ -1,0 +1,28 @@
+;; Object Facades/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Facades/"
+  :tables (list 
+   (semanticdb-table "Auth.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Illuminate\\Support\\Facades" type
+               (:members 
+                  ( ("Auth" type
+                       (:superclasses "Facade"
+                        :members 
+                          ( ("getFacadeAccessor" function (:typemodifiers ("protected" "static")) (reparse-symbol class_member_declaration) [249 329]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [123 331]))                  
+                :type "namespace")
+                nil [8 331]))          
+    :file "Auth.php"
+    :pointmax 332
+    :fsize 331
+    :lastmodtime '(22083 50454 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!vendor!laravel!framework!src!Illuminate!Support!Facades!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

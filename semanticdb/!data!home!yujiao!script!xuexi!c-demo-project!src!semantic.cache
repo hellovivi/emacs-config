@@ -1,0 +1,25 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "lib2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lib2.h" include nil nil [1 18])
+            ("lib2_func" function (:type "void") nil [20 40])
+            ("lib2_func" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [56 62]))                  
+                :type "int")
+                nil [42 65]))          
+    :file "lib2.c"
+    :pointmax 66
+    :fsize 65
+    :lastmodtime '(22015 49706 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!script!xuexi!c-demo-project!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

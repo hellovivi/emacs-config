@@ -1,0 +1,40 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables (list 
+   (semanticdb-table "User.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App" type
+               (:members 
+                  ( ("User" type
+                       (:members 
+                          ( ("init" function (:arguments 
+                              ( ("$token" variable nil (reparse-symbol formal_parameters) [763 769]))                              ) (reparse-symbol class_member_declaration) [749 821])
+                            ("$table" variable
+                               (:typemodifiers ("protected")
+                                :default-value "'users'")
+                                (reparse-symbol class_member_declaration) [914 941])
+                            ("$fillable" variable
+                               (:typemodifiers ("protected")
+                                :default-value "['name', 'email', 'password']")
+                                (reparse-symbol class_member_declaration) [1036 1088])
+                            ("$hidden" variable
+                               (:typemodifiers ("protected")
+                                :default-value "['password', 'remember_token']")
+                                (reparse-symbol class_member_declaration) [1194 1245]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [667 1247]))                  
+                :type "namespace")
+                nil [8 1247]))          
+    :file "User.php"
+    :pointmax 1248
+    :fsize 1247
+    :lastmodtime '(22102 36726 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

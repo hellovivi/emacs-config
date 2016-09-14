@@ -1,0 +1,18 @@
+;; Object group/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "group/"
+  :tables (list 
+   (semanticdb-table "robGroup.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "robGroup.php"
+    :pointmax 3500
+    :fsize 3599
+    :lastmodtime '(22080 32743 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 338 . 3499) (PAREN_BLOCK 331 . 337) (T_WHILE 325 . 330) (T_SEMI 323 . 324) (NUMBER_LITERAL 322 . 323) (T_EQ 320 . 321) (T_VARIABLE 308 . 319) (T_SEMI 306 . 307) (NUMBER_LITERAL 305 . 306) (T_EQ 303 . 304) (T_VARIABLE 295 . 302) (T_SEMI 293 . 294) (NUMBER_LITERAL 291 . 293) (T_EQ 289 . 290) (T_VARIABLE 279 . 288) (BRACE_BLOCK 234 . 278) (PAREN_BLOCK 227 . 233) (T_IF 224 . 226) (T_SEMI 222 . 223) (BRACK_BLOCK 219 . 222) (BRACK_BLOCK 211 . 219) (T_VARIABLE 203 . 211) (T_EQ 201 . 202) (T_VARIABLE 197 . 200) (T_SEMI 195 . 196) (STRING_LITERAL 165 . 195) (T_DOT 163 . 164) (IDENTIFIER 141 . 163) (T_REQUIRE_ONCE 128 . 140) (T_SEMI 126 . 127) (STRING_LITERAL 96 . 126) (T_DOT 94 . 95) (IDENTIFIER 81 . 94) (T_REQUIRE_ONCE 68 . 80) (T_SEMI 66 . 67) (STRING_LITERAL 40 . 66) (T_DOT 38 . 39) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!im!webim!group_chat!script!group!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

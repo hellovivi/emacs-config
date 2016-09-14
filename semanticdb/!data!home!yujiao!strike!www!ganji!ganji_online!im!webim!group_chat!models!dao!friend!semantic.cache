@@ -1,0 +1,158 @@
+;; Object friend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "friend/"
+  :tables (list 
+   (semanticdb-table "DbUserInfo.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Dao_Friend_DbUserInfo" type
+               (:members 
+                  ( ("$dbHandler" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [40 58])
+                    ("$userId" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [63 79])
+                    ("$tableName" variable
+                       (:typemodifiers ("private")
+                        :default-value "\"userInfo_\"")
+                        (reparse-symbol class_member_declaration) [84 115])
+                    ("$lastSql" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [120 136])
+                    ("__construct" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [169 176]))                          )
+                        (reparse-symbol class_member_declaration) [141 344])
+                    ("createUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$arrFields" variable nil (reparse-symbol formal_parameters) [376 386]))                          )
+                        (reparse-symbol class_member_declaration) [349 540])
+                    ("updateUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$arrFields" variable nil (reparse-symbol formal_parameters) [576 586]))                          )
+                        (reparse-symbol class_member_declaration) [545 767])
+                    ("getUserInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userId" variable nil (reparse-symbol formal_parameters) [800 807]))                          )
+                        (reparse-symbol class_member_declaration) [772 1018])
+                    ("getUserInfoByPage" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$page" variable nil (reparse-symbol formal_parameters) [1068 1073])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [1074 1080]))                          )
+                        (reparse-symbol class_member_declaration) [1034 1294]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 1296]))          
+    :file "DbUserInfo.class.php"
+    :pointmax 1297
+    :fsize 1296
+    :lastmodtime '(22093 34887 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DbNearbyPerson.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Dao_Friend_DbNearbyPerson" type
+               (:members 
+                  ( ("$conn" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [44 58])
+                    ("$db" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [63 75])
+                    ("$collection" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [80 100])
+                    ("__construct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [105 1167])
+                    ("__destruct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [1172 1241])
+                    ("updateNearbyPersonInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userInfo" variable nil (reparse-symbol formal_parameters) [1301 1310]))                          )
+                        (reparse-symbol class_member_declaration) [1262 1458])
+                    ("updateGpsInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$userInfo" variable nil (reparse-symbol formal_parameters) [1520 1529]))                          )
+                        (reparse-symbol class_member_declaration) [1490 1699])
+                    ("getNearbyPerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [1783 1793])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [1794 1803])
+                            ("$num" variable nil (reparse-symbol formal_parameters) [1804 1808])
+                            ("$maxDis" variable nil (reparse-symbol formal_parameters) [1809 1816])
+                            ("$queryInfo" variable nil (reparse-symbol formal_parameters) [1817 1827]))                          )
+                        (reparse-symbol class_member_declaration) [1751 2233])
+                    ("getActivePerson" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$timestamp" variable nil (reparse-symbol formal_parameters) [2291 2301]))                          )
+                        (reparse-symbol class_member_declaration) [2259 2516])
+                    ("getActivePersonByTimeRange" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$timeStart" variable nil (reparse-symbol formal_parameters) [2587 2597])
+                            ("$timeEnd" variable nil (reparse-symbol formal_parameters) [2599 2607]))                          )
+                        (reparse-symbol class_member_declaration) [2544 2840])
+                    ("getNearbyPersonByTimestamp" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$longitude" variable nil (reparse-symbol formal_parameters) [2912 2922])
+                            ("$latitude" variable nil (reparse-symbol formal_parameters) [2923 2932])
+                            ("$num" variable nil (reparse-symbol formal_parameters) [2933 2937])
+                            ("$maxDis" variable nil (reparse-symbol formal_parameters) [2938 2945])
+                            ("$timestamp" variable nil (reparse-symbol formal_parameters) [2946 2956])
+                            ("$queryInfo" variable nil (reparse-symbol formal_parameters) [2957 2967]))                          )
+                        (reparse-symbol class_member_declaration) [2869 3438]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 3440]))          
+    :file "DbNearbyPerson.class.php"
+    :pointmax 3441
+    :fsize 3668
+    :lastmodtime '(22095 58109 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DbReport.class.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("Dao_Friend_DbReport" type
+               (:members 
+                  ( ("$dbHandler" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [38 56])
+                    ("$tableName" variable (:typemodifiers ("private")) (reparse-symbol class_member_declaration) [61 80])
+                    ("$lastSql" variable (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [85 101])
+                    ("__construct" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [106 246])
+                    ("insertOrUpdateReportInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$insertArr" variable nil (reparse-symbol formal_parameters) [309 319])
+                            ("$updateArr" variable (:default-value (331 . 335)) (reparse-symbol formal_parameters) [320 335]))                          )
+                        (reparse-symbol class_member_declaration) [268 505])
+                    ("getIdByReport" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$reportType" variable nil (reparse-symbol formal_parameters) [540 551])
+                            ("$byReportId" variable nil (reparse-symbol formal_parameters) [552 563]))                          )
+                        (reparse-symbol class_member_declaration) [510 763])
+                    ("getReportInfoById" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$id" variable nil (reparse-symbol formal_parameters) [803 806]))                          )
+                        (reparse-symbol class_member_declaration) [769 962])
+                    ("searchReportInfo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("$reportTypes" variable nil (reparse-symbol formal_parameters) [1020 1032])
+                            ("$reportTimeStart" variable nil (reparse-symbol formal_parameters) [1033 1049])
+                            ("$reportTimeEnd" variable nil (reparse-symbol formal_parameters) [1050 1064])
+                            ("$isHandled" variable nil (reparse-symbol formal_parameters) [1065 1075])
+                            ("$isEffic" variable nil (reparse-symbol formal_parameters) [1076 1084])
+                            ("$page" variable nil (reparse-symbol formal_parameters) [1086 1091])
+                            ("$count" variable nil (reparse-symbol formal_parameters) [1093 1099]))                          )
+                        (reparse-symbol class_member_declaration) [987 2084]))                  
+                :type "class")
+                (reparse-symbol compilation_units) [7 2086]))          
+    :file "DbReport.class.php"
+    :pointmax 2087
+    :fsize 2126
+    :lastmodtime '(22093 34887 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!strike!www!ganji!ganji_online!im!webim!group_chat!models!dao!friend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

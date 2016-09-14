@@ -1,0 +1,36 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "CheckToken.class.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "CheckToken.class.php"
+    :pointmax 4820
+    :fsize 4823
+    :lastmodtime '(22093 34887 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "GetHeader.class.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "GetHeader.class.php"
+    :pointmax 966
+    :fsize 965
+    :lastmodtime '(22095 7451 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 392 . 966) (IDENTIFIER 383 . 392) (T_CLASS 377 . 382) (T_SEMI 374 . 375) (STRING_LITERAL 351 . 374) (T_DOT 350 . 351) (PAREN_BLOCK 340 . 350) (IDENTIFIER 333 . 340))
+    )
+   (semanticdb-table "AntiSpam.class.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "AntiSpam.class.php"
+    :pointmax 10558
+    :fsize 11245
+    :lastmodtime '(22093 34887 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 77 . 10557) (IDENTIFIER 69 . 77) (T_CLASS 63 . 68) (T_SEMI 61 . 62) (STRING_LITERAL 38 . 61) (T_DOT 37 . 38) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   )
+  :file "!data!home!yujiao!strike!www!ganji!ganji_online!im!webim!group_chat!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

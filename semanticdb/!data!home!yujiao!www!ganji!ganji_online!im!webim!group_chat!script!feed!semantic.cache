@@ -1,0 +1,27 @@
+;; Object feed/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "feed/"
+  :tables (list 
+   (semanticdb-table "updateAllUserDriftBottleMsg.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "updateAllUserDriftBottleMsg.php"
+    :pointmax 673
+    :fsize 672
+    :lastmodtime '(22080 32744 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sendDriftBottleMsg.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "sendDriftBottleMsg.php"
+    :pointmax 5058
+    :fsize 5127
+    :lastmodtime '(22080 32744 0 0)
+    :unmatched-syntax '((T_SEMI 5056 . 5057) (PAREN_BLOCK 5054 . 5056) (IDENTIFIER 5036 . 5054) (BRACE_BLOCK 1421 . 5035) (PAREN_BLOCK 1419 . 1421) (IDENTIFIER 1401 . 1419) (T_FUNCTION 1392 . 1400) (BRACE_BLOCK 551 . 1391) (PAREN_BLOCK 503 . 551) (IDENTIFIER 493 . 503) (T_FUNCTION 484 . 492) (BRACE_BLOCK 115 . 483) (PAREN_BLOCK 100 . 115) (IDENTIFIER 87 . 100) (T_FUNCTION 78 . 86) (T_SEMI 76 . 77) (STRING_LITERAL 40 . 76) (T_DOT 38 . 39) (PAREN_BLOCK 27 . 37) (IDENTIFIER 20 . 27))
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!im!webim!group_chat!script!feed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

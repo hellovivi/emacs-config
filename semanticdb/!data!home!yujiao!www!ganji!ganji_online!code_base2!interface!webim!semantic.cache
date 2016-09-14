@@ -1,0 +1,18 @@
+;; Object webim/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "webim/"
+  :tables (list 
+   (semanticdb-table "WebImInterface.class.php"
+    :major-mode 'php-mode
+    :tags nil
+    :file "WebImInterface.class.php"
+    :pointmax 38087
+    :fsize 41634
+    :lastmodtime '(22052 24559 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 281 . 38084) (IDENTIFIER 266 . 280) (T_CLASS 260 . 265) (T_SEMI 258 . 259) (STRING_LITERAL 224 . 258) (T_DOT 222 . 223) (IDENTIFIER 211 . 221) (T_REQUIRE_ONCE 198 . 210) (T_SEMI 196 . 197) (STRING_LITERAL 168 . 196) (T_DOT 166 . 167) (IDENTIFIER 155 . 165) (T_REQUIRE_ONCE 142 . 154) (T_SEMI 140 . 141) (STRING_LITERAL 110 . 140) (T_DOT 108 . 109) (PAREN_BLOCK 97 . 107) (IDENTIFIER 90 . 97))
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!code_base2!interface!webim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

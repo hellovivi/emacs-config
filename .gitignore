@@ -1,0 +1,10 @@
+#/vendor
+/bootstrap/cache/*.json
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+*.swp
+*.swo
+*\.svn\\
+/backups

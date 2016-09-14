@@ -1,0 +1,33 @@
+;; Object wtable/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wtable/"
+  :tables (list 
+   (semanticdb-table "WtableServiceProvider.php"
+    :major-mode 'php-mode
+    :tags 
+        '( ("App\\Providers" type
+               (:members 
+                  ( ("WtableServiceProvider" type
+                       (:superclasses "ServiceProvider"
+                        :members 
+                          ( ("boot" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [219 379])
+                            ("register" function (:typemodifiers ("public")) (reparse-symbol class_member_declaration) [470 724]))                          
+                        :type "class")
+                        (reparse-symbol compilation_units) [75 726])
+                    ("ServiceProvider" alias
+                       (:definition "Illuminate\\Support\\ServiceProvider"
+                        :aliasclass "alias")
+                        (reparse-symbol compilation_units) [38 72]))                  
+                :type "namespace")
+                nil [8 726]))          
+    :file "WtableServiceProvider.php"
+    :pointmax 727
+    :fsize 726
+    :lastmodtime '(22083 8450 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!data!home!yujiao!www!ganji!ganji_online!php-bs!app!Providers!wtable!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
