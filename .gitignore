@@ -9,3 +9,4 @@ Homestead.json
 *\.svn\\
 /backups
 /semanticdb
+/auto-save-list
