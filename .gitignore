@@ -8,3 +8,4 @@ Homestead.json
 *.swo
 *\.svn\\
 /backups
+/semanticdb
