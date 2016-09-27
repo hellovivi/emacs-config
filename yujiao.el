@@ -4,7 +4,7 @@
 ;; (setq package-enable-at-startup nil)
 ;; (package-initialize)
 ;;(setq debug-on-error t)
-(starter-kit-load "cedet")
+;;(starter-kit-load "cedet")
 (starter-kit-load "auto-complete")
 (starter-kit-load "autopair")
 (starter-kit-load "flymake")
