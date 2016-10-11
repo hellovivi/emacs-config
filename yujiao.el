@@ -14,6 +14,6 @@
 (starter-kit-load "multi-web")
 ;;(starter-kit-load "color-theme")
 ;;(starter-kit-load "c")
-
+(ispell-change-dictionary "american" t)
 ;; (starter-kit-load "flymake")
 (message "finishe loading mp3 config ....")
