@@ -1,7 +1,7 @@
 
-(dolist (package '(python-mode ipython))
-  (unless (package-installed-p package)
-    (package-install package)))
+;;  (dolist (package '(python-mode ipython))
+;;    (unless (package-installed-p package)
+;;      (package-install package)))
 
 (require 'python-mode)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))

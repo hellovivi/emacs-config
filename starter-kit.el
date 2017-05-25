@@ -16,7 +16,7 @@
         ("original"    . "http://tromey.com/elpa/")
         ("org"         . "http://orgmode.org/elpa/")
         ("marmalade"   . "http://marmalade-repo.org/packages/")
-        ("melpa"       . "http://melpa.milkbox.net/packages/")))
+        ("melpa"       . "https://melpa.org/packages/")))
 (package-initialize)
 
 (defvar starter-kit-packages
