@@ -1,41 +1,51 @@
 
-(add-to-list 'load-path starter-kit-dir)
+(let ((elisp-dir (expand-file-name "src" starter-kit-dir)))
+  ;; add the src directory to the load path
+  (add-to-list 'load-path elisp-dir)
+  ;; load specific files
+  (when (file-exists-p elisp-dir)
+    (let ((default-directory elisp-dir))
+      (normal-top-level-add-subdirs-to-load-path))))
 (setq autoload-file (concat starter-kit-dir "loaddefs.el"))
 (setq package-user-dir (concat starter-kit-dir "elpa"))
 (setq custom-file (concat starter-kit-dir "custom.el"))
 
 (require 'cl)
+(require 'cl-lib)
 (require 'saveplace)
 (require 'ffap)
 (require 'uniquify)
 (require 'ansi-color)
 (require 'recentf)
 
+(defun starter-kit-loadable-p (package)
+  "Check if PACKAGE is loadable from a directory in `load-path'."
+  (let ((load-file (concat (symbol-name package) ".el")))
+    (catch 'file-found
+      (dolist (dir load-path)
+        (let ((path (expand-file-name load-file dir)))
+          (when (file-exists-p path)
+            (throw 'file-found path)))))))
+
 (setq package-archives
       '(("gnu"         . "http://elpa.gnu.org/packages/")
-        ("original"    . "http://tromey.com/elpa/")
         ("org"         . "http://orgmode.org/elpa/")
-        ("marmalade"   . "http://marmalade-repo.org/packages/")
-        ("melpa"       . "https://melpa.org/packages/")))
+        ("melpa"       . "http://melpa.org/packages/")
+        ("marmalade"   . "http://marmalade-repo.org/packages/")))
 (package-initialize)
 
-(defvar starter-kit-packages
-  (list 'yasnippet)
-  "Libraries that should be installed by default.")
+(defvar starter-kit-packages nil
+  "Libraries that should be installed by default (currently none).")
 
-;; If `yasnippet-bundle' has previously been installed through ELPA,
-;; delete it before installing the new `yasnippet'
-(let ((yas-bundle-desc (assq 'yasnippet-bundle package-alist)))
-  (when yas-bundle-desc
-    (package-delete "yasnippet-bundle"
-                    (package-version-join
-                     (package-desc-vers (cdr yas-bundle-desc))))))
-
-(unless package-archive-contents
-  (package-refresh-contents))
-(dolist (package starter-kit-packages)
-  (unless (package-installed-p package)
-    (package-install package)))
+(defun starter-kit-install-if-needed (&rest packages)
+  "Install PACKAGES using ELPA if they are not loadable or installed locally."
+  (when packages
+    (unless package-archive-contents
+      (package-refresh-contents))
+    (dolist (package packages)
+      (unless (or (starter-kit-loadable-p package)
+                  (package-installed-p package))
+        (package-install package)))))
 
 (defun starter-kit-load (file &optional header-or-tag)
   "Load configuration from other starter-kit-*.org files.
@@ -99,28 +109,7 @@ to your configuration."
 
 (starter-kit-load "starter-kit-registers.org")
 
-(add-to-list 'load-path
-             (expand-file-name  "yasnippet"
-                                (expand-file-name "src"
-                                                  starter-kit-dir)))
-(require 'yasnippet)
-(yas-global-mode 1)
-
-(yas/load-directory (expand-file-name "snippets" starter-kit-dir))
-
-(defun yas/org-very-safe-expand ()
-  (let ((yas/fallback-behavior 'return-nil)) (yas/expand)))
-
-(defun yas/org-setup ()
-  ;; yasnippet (using the new org-cycle hooks)
-  (make-variable-buffer-local 'yas/trigger-key)
-  (setq yas/trigger-key [tab])
-  (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
-  (define-key yas/keymap [tab] 'yas/next-field))
-
-(add-hook 'org-mode-hook #'yas/org-setup)
-
-(flet ((sk-load (base)
+(cl-flet ((sk-load (base)
          (let* ((path          (expand-file-name base starter-kit-dir))
                 (literate      (concat path ".org"))
                 (encrypted-org (concat path ".org.gpg"))
@@ -134,14 +123,7 @@ to your configuration."
        (remove-extension (name)
          (string-match "\\(.*?\\)\.\\(org\\(\\.el\\)?\\|el\\)\\(\\.gpg\\)?$" name)
          (match-string 1 name)))
-  (let ((elisp-dir (expand-file-name "src" starter-kit-dir))
-        (user-dir (expand-file-name user-login-name starter-kit-dir)))
-    ;; add the src directory to the load path
-    (add-to-list 'load-path elisp-dir)
-    ;; load specific files
-    (when (file-exists-p elisp-dir)
-      (let ((default-directory elisp-dir))
-        (normal-top-level-add-subdirs-to-load-path)))
+  (let ((user-dir (expand-file-name user-login-name starter-kit-dir)))
     ;; load system-specific config
     (sk-load system-name)
     ;; load user-specific config

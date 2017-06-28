@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/www/ganji/ganji_online/im/" "~/strike/" "~/www/ganji/ganji_online/php-bs/" "~/www/ganji/ganji_online/webim/" "~/www/ganji/ganji_online/php-ds/" "~/www/ganji/ganji_online/code_base2/" "~/www/ganji/ganji_online/backend/" "~/script/xuexi/c-demo-project/")
+("~/.emacs.d/" "~/workspace/xinche_api/" "~/www/ganji/ganji_online/im/" "~/strike/" "~/www/ganji/ganji_online/php-bs/" "~/www/ganji/ganji_online/webim/" "~/www/ganji/ganji_online/php-ds/" "~/www/ganji/ganji_online/code_base2/" "~/www/ganji/ganji_online/backend/" "~/script/xuexi/c-demo-project/")

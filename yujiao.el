@@ -12,6 +12,7 @@
 (starter-kit-load "python")
 (starter-kit-load "go")
 (starter-kit-load "common")
+(starter-kit-load "java")
 ;;(starter-kit-load "multi-web")
 ;;(starter-kit-load "color-theme")
 ;;(starter-kit-load "c")
