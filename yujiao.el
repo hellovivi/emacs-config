@@ -11,6 +11,7 @@
 (starter-kit-load "php")
 (starter-kit-load "python")
 (starter-kit-load "go")
+(starter-kit-load "protobuf")
 (starter-kit-load "common")
 (starter-kit-load "java")
 ;;(starter-kit-load "multi-web")

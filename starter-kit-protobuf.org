@@ -12,7 +12,6 @@ Support for the Python programming language.
 Determine whether required packages are installed. If not, use ELPA to
 install them.
 #+begin_src emacs-lisp
-  ;(starter-kit-install-if-needed 'python-mode)
 #+end_src
 
 ** Use Python's python-mode.el instead of Emacs' python.el
@@ -22,11 +21,7 @@ install them.
 Replace the Python mode that comes with Emacs by the Python mode
 supplied by the Python distribution itself.
 #+begin_src emacs-lisp
-(require 'python-mode)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-(when (executable-find "ipython")
-   (setq python-shell-interpreter "ipython"))
-;(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+(require 'protobuf-mode)
 #+end_src
 
 ** Use Cython mode
@@ -34,8 +29,6 @@ supplied by the Python distribution itself.
    :CUSTOM_ID: cython
    :END:
 #+begin_src emacs-lisp
-  (when (require 'cython-mode nil 'no-error)
-    (add-to-list 'auto-mode-alist '("\\.pyx\\'" . cython-mode))
-    (add-to-list 'auto-mode-alist '("\\.pxd\\'" . cython-mode))
-    (add-to-list 'auto-mode-alist '("\\.pxi\\'" . cython-mode)))
 #+end_src
+
+   

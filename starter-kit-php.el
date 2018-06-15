@@ -57,6 +57,14 @@
 
 ;;(add-hook 'php-mode-hook 'yujiao-php-mode-init)
 
+(require 'phpcbf)
+
+(custom-set-variables
+ '(phpcbf-executable "/usr/local/bin/phpcbf") 
+'(phpcbf-standard "PSR2"))
+
+;; Auto format on save.
+;;(add-hook 'php-mode-hook 'phpcbf-enable-on-save)
 
 
 ;;(defun wicked/php-mode-init ()
