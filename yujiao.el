@@ -1,5 +1,5 @@
 ;; mp3 custom config
-(message "start to load mp3 config ....")
+(message "start to load yujiao config ....")
 
 ;; (setq package-enable-at-startup nil)
 ;; (package-initialize)
@@ -11,9 +11,10 @@
 (starter-kit-load "php")
 (starter-kit-load "python")
 (starter-kit-load "go")
+(starter-kit-load "lsp")
 (starter-kit-load "protobuf")
 (starter-kit-load "common")
-(starter-kit-load "java")
+;;(starter-kit-load "java")
 ;;(starter-kit-load "multi-web")
 ;;(starter-kit-load "color-theme")
 ;;(starter-kit-load "c")
